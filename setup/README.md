@@ -64,22 +64,26 @@ colcon build
 
 ## Installing the Package
 
+
+install the package
+
+```bash
+. install/setup.bash
+```
+
 Verify the installation of the package:
 
 ```bash
 ros2 pkg list
 ```
 
-Packages created should now appear. If not, execute the following commands:
-
-```bash
-. install/setup.bash
-ros2 pkg list
-```
-
 ### Explanation:
 - `ros2 pkg list`: Lists installed ROS packages.
 - `. install/setup.bash`: Sets up the environment for the installed packages.
+
+
+## Files setup
+Now you can copy the content from this repo located at (rovertest/src/rover_model) inside the package forlder in ubuntu located at my_files/rovertest/src/rover_model
 
 ## Starting a New Terminal
 
