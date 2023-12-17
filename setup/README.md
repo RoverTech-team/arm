@@ -136,7 +136,6 @@ Open a terminal for VS Code builds from the main folder "/my_files/rovertest":
 colcon build
 ```
 
-From the Ubuntu terminal within the VNC Viewer GUI:
 
 ```bash
 cd /my_files/rovertest
@@ -148,7 +147,7 @@ cd /my_files/rovertest
 
 ### Without launch.py
 
-Execute the following commands from the Ubuntu terminal:
+Execute the following commands from the From the Ubuntu terminal within the VNC Viewer GUI:
 
 ```bash
 cd /my_files/rovertest
