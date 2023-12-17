@@ -2,6 +2,8 @@
 
 This guide provides step-by-step instructions for setting up the Rover Challenge environment and working with ROS2 packages.
 
+In this guide we assume that the folder rovertest is located directly in the my_files forlder of the ubuntu docker image.
+
 ## Initial Terminal Setup
 (opening a terminal from the host machine)
 When opening the terminal for the first time, execute the following commands:
