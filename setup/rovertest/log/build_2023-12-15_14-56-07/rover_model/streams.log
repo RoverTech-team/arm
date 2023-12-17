@@ -1,0 +1,40 @@
+[0.257s] Invoking command in '/my_files/rovertest/build/rover_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/my_files/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /my_files/rovertest/build/rover_model -- -j2 -l2
+[0.384s] Invoked command in '/my_files/rovertest/build/rover_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/my_files/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /my_files/rovertest/build/rover_model -- -j2 -l2
+[0.612s] Invoking command in '/my_files/rovertest/build/rover_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/my_files/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /my_files/rovertest/build/rover_model
+[0.660s] -- Install configuration: ""
+[0.668s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes
+[0.672s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/.DS_Store
+[0.684s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/base_plate.STL
+[0.700s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/basement.STL
+[0.706s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/claw_support.STL
+[0.800s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/forward_drive_arm.STL
+[0.808s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/horizontal_arm.STL
+[0.814s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/left_finger.STL
+[0.819s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/link.STL
+[0.825s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/plate.STL
+[0.831s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/right_finger.STL
+[0.836s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/round_plate.STL
+[0.842s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/servo_plate.STL
+[0.850s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/triangular_link.STL
+[0.867s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/vertical_drive_arm.STL
+[0.883s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/urdf
+[0.905s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/urdf/arm.urdf.xacro
+[0.916s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/launch
+[0.931s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/launch/display.launch.py
+[0.953s] -- Installing: /my_files/rovertest/install/rover_model/share/rover_model/rviz
+[1.006s] -- Installing: /my_files/rovertest/install/rover_model/share/ament_index/resource_index/package_run_dependencies/rover_model
+[1.021s] -- Installing: /my_files/rovertest/install/rover_model/share/ament_index/resource_index/parent_prefix_path/rover_model
+[1.027s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/environment/ament_prefix_path.sh
+[1.032s] -- Installing: /my_files/rovertest/install/rover_model/share/rover_model/environment/ament_prefix_path.dsv
+[1.037s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/environment/path.sh
+[1.050s] -- Installing: /my_files/rovertest/install/rover_model/share/rover_model/environment/path.dsv
+[1.063s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/local_setup.bash
+[1.067s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/local_setup.sh
+[1.070s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/local_setup.zsh
+[1.076s] -- Installing: /my_files/rovertest/install/rover_model/share/rover_model/local_setup.dsv
+[1.083s] -- Installing: /my_files/rovertest/install/rover_model/share/rover_model/package.dsv
+[1.089s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/ament_index/resource_index/packages/rover_model
+[1.095s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/cmake/rover_modelConfig.cmake
+[1.099s] -- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/cmake/rover_modelConfig-version.cmake
+[1.102s] -- Installing: /my_files/rovertest/install/rover_model/share/rover_model/package.xml
+[1.110s] Invoked command in '/my_files/rovertest/build/rover_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/my_files/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /my_files/rovertest/build/rover_model

@@ -1,0 +1,19 @@
+[0.205s] Invoking command in '/my_files/rovertest/build/rover_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/my_files/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /my_files/rovertest/build/rover_model -- -j2 -l2
+[0.266s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.586s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.834s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.838s] -- Added test 'lint_cmake' to check CMake code style
+[0.848s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.853s] -- Added test 'xmllint' to check XML markup files
+[0.894s] -- Configuring done
+[1.229s] -- Generating done
+[1.280s] -- Build files have been written to: /my_files/rovertest/build/rover_model
+[1.362s] Invoked command in '/my_files/rovertest/build/rover_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/my_files/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /my_files/rovertest/build/rover_model -- -j2 -l2
+[1.898s] Invoking command in '/my_files/rovertest/build/rover_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/my_files/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /my_files/rovertest/build/rover_model
+[1.920s] -- Install configuration: ""
+[1.923s] [31mCMake Error at cmake_install.cmake:46 (file):
+[1.926s]   file INSTALL cannot find "/my_files/rovertest/src/rover_model/config": No
+[1.930s]   such file or directory.
+[1.932s] 
+[1.933s] [0m
+[1.935s] Invoked command in '/my_files/rovertest/build/rover_model' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/my_files/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /my_files/rovertest/build/rover_model

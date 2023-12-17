@@ -1,0 +1,159 @@
+[0.000000] (-) TimerEvent: {}
+[0.012395] (rover_cpp) JobQueued: {'identifier': 'rover_cpp', 'dependencies': OrderedDict()}
+[0.014347] (rover_model) JobQueued: {'identifier': 'rover_model', 'dependencies': OrderedDict()}
+[0.015443] (rover_py) JobQueued: {'identifier': 'rover_py', 'dependencies': OrderedDict()}
+[0.016197] (rover_cpp) JobStarted: {'identifier': 'rover_cpp'}
+[0.096314] (-) TimerEvent: {}
+[0.197901] (-) TimerEvent: {}
+[0.265139] (rover_model) JobStarted: {'identifier': 'rover_model'}
+[0.298124] (-) TimerEvent: {}
+[0.401080] (-) TimerEvent: {}
+[0.503232] (-) TimerEvent: {}
+[0.529599] (rover_cpp) JobProgress: {'identifier': 'rover_cpp', 'progress': 'cmake'}
+[0.564161] (rover_cpp) JobProgress: {'identifier': 'rover_cpp', 'progress': 'build'}
+[0.567768] (rover_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/my_files/rovertest/build/rover_cpp', '--', '-j2', '-l2'], 'cwd': '/my_files/rovertest/build/rover_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('HOSTNAME', '4ee67a4e4538'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('COLCON_PREFIX_PATH', '/my_files/rovertest/install:/my_files/armSim/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/my_files/rovertest/install/rover_py:/my_files/rovertest/install/rover_model:/my_files/rovertest/install/rover_cpp:/my_files/armSim/install/arm_cpp:/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PASSWD', 'ubuntu'), ('PWD', '/my_files/rovertest/build/rover_cpp'), ('PYTHONPATH', '/my_files/rovertest/install/rover_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/my_files/rovertest/install/rover_model:/my_files/rovertest/install/rover_cpp:/my_files/armSim/install/arm_cpp:/my_files/rovertest/install/rover_py:/opt/ros/humble')]), 'shell': False}
+[0.603417] (-) TimerEvent: {}
+[0.606450] (rover_model) JobProgress: {'identifier': 'rover_model', 'progress': 'cmake'}
+[0.624941] (rover_model) JobProgress: {'identifier': 'rover_model', 'progress': 'build'}
+[0.636808] (rover_model) Command: {'cmd': ['/usr/bin/cmake', '--build', '/my_files/rovertest/build/rover_model', '--', '-j2', '-l2'], 'cwd': '/my_files/rovertest/build/rover_model', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('HOSTNAME', '4ee67a4e4538'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('COLCON_PREFIX_PATH', '/my_files/rovertest/install:/my_files/armSim/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/my_files/rovertest/install/rover_py:/my_files/rovertest/install/rover_model:/my_files/rovertest/install/rover_cpp:/my_files/armSim/install/arm_cpp:/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PASSWD', 'ubuntu'), ('PWD', '/my_files/rovertest/build/rover_model'), ('PYTHONPATH', '/my_files/rovertest/install/rover_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/my_files/rovertest/install/rover_model:/my_files/rovertest/install/rover_cpp:/my_files/armSim/install/arm_cpp:/my_files/rovertest/install/rover_py:/opt/ros/humble')]), 'shell': False}
+[0.703626] (-) TimerEvent: {}
+[0.805762] (-) TimerEvent: {}
+[0.871446] (rover_cpp) CommandEnded: {'returncode': 0}
+[0.905945] (-) TimerEvent: {}
+[0.931322] (rover_model) CommandEnded: {'returncode': 0}
+[1.006285] (-) TimerEvent: {}
+[1.037375] (rover_model) JobProgress: {'identifier': 'rover_model', 'progress': 'install'}
+[1.056395] (rover_model) Command: {'cmd': ['/usr/bin/cmake', '--install', '/my_files/rovertest/build/rover_model'], 'cwd': '/my_files/rovertest/build/rover_model', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('HOSTNAME', '4ee67a4e4538'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('COLCON_PREFIX_PATH', '/my_files/rovertest/install:/my_files/armSim/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/my_files/rovertest/install/rover_py:/my_files/rovertest/install/rover_model:/my_files/rovertest/install/rover_cpp:/my_files/armSim/install/arm_cpp:/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PASSWD', 'ubuntu'), ('PWD', '/my_files/rovertest/build/rover_model'), ('PYTHONPATH', '/my_files/rovertest/install/rover_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/my_files/rovertest/install/rover_model:/my_files/rovertest/install/rover_cpp:/my_files/armSim/install/arm_cpp:/my_files/rovertest/install/rover_py:/opt/ros/humble')]), 'shell': False}
+[1.068444] (rover_cpp) JobProgress: {'identifier': 'rover_cpp', 'progress': 'install'}
+[1.075096] (rover_cpp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/my_files/rovertest/build/rover_cpp'], 'cwd': '/my_files/rovertest/build/rover_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('HOSTNAME', '4ee67a4e4538'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('COLCON_PREFIX_PATH', '/my_files/rovertest/install:/my_files/armSim/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/my_files/rovertest/install/rover_py:/my_files/rovertest/install/rover_model:/my_files/rovertest/install/rover_cpp:/my_files/armSim/install/arm_cpp:/opt/ros/humble'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PASSWD', 'ubuntu'), ('PWD', '/my_files/rovertest/build/rover_cpp'), ('PYTHONPATH', '/my_files/rovertest/install/rover_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/my_files/rovertest/install/rover_model:/my_files/rovertest/install/rover_cpp:/my_files/armSim/install/arm_cpp:/my_files/rovertest/install/rover_py:/opt/ros/humble')]), 'shell': False}
+[1.097503] (rover_model) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.101453] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes\n'}
+[1.106422] (-) TimerEvent: {}
+[1.130213] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/.DS_Store\n'}
+[1.143726] (rover_cpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.152022] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/base_plate.STL\n'}
+[1.155916] (rover_cpp) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_cpp/share/ament_index/resource_index/package_run_dependencies/rover_cpp\n'}
+[1.159593] (rover_cpp) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_cpp/share/ament_index/resource_index/parent_prefix_path/rover_cpp\n'}
+[1.165517] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/basement.STL\n'}
+[1.170173] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/claw_support.STL\n'}
+[1.175281] (rover_cpp) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/environment/ament_prefix_path.sh\n'}
+[1.179980] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/forward_drive_arm.STL\n'}
+[1.183947] (rover_cpp) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/environment/ament_prefix_path.dsv\n'}
+[1.193258] (rover_cpp) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/environment/path.sh\n'}
+[1.209702] (-) TimerEvent: {}
+[1.230632] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/horizontal_arm.STL\n'}
+[1.254153] (rover_cpp) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/environment/path.dsv\n'}
+[1.281304] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/left_finger.STL\n'}
+[1.322113] (-) TimerEvent: {}
+[1.328052] (rover_cpp) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/local_setup.bash\n'}
+[1.373374] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/link.STL\n'}
+[1.381156] (rover_cpp) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/local_setup.sh\n'}
+[1.388565] (rover_cpp) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/local_setup.zsh\n'}
+[1.404499] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/plate.STL\n'}
+[1.440351] (-) TimerEvent: {}
+[1.447459] (rover_cpp) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/local_setup.dsv\n'}
+[1.476554] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/right_finger.STL\n'}
+[1.487748] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/round_plate.STL\n'}
+[1.505529] (rover_cpp) StdoutLine: {'line': b'-- Installing: /my_files/rovertest/install/rover_cpp/share/rover_cpp/package.dsv\n'}
+[1.538753] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/servo_plate.STL\n'}
+[1.551035] (-) TimerEvent: {}
+[1.559956] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/triangular_link.STL\n'}
+[1.586254] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/meshes/vertical_drive_arm.STL\n'}
+[1.597938] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/urdf\n'}
+[1.617710] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/urdf/arm.urdf.xacro\n'}
+[1.651126] (-) TimerEvent: {}
+[1.655731] (rover_cpp) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_cpp/share/ament_index/resource_index/packages/rover_cpp\n'}
+[1.692038] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/launch\n'}
+[1.864830] (-) TimerEvent: {}
+[1.899659] (rover_cpp) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/cmake/rover_cppConfig.cmake\n'}
+[2.045772] (-) TimerEvent: {}
+[2.048243] (rover_cpp) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/cmake/rover_cppConfig-version.cmake\n'}
+[2.061497] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/launch/display.launch.py\n'}
+[2.068222] (rover_model) StdoutLine: {'line': b'-- Installing: /my_files/rovertest/install/rover_model/share/rover_model/launch/gazebo.launch.py\n'}
+[2.082970] (rover_cpp) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/package.xml\n'}
+[2.094589] (rover_cpp) CommandEnded: {'returncode': 0}
+[2.104987] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/rviz\n'}
+[2.108980] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/rviz/display.rviz\n'}
+[2.114709] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/ament_index/resource_index/package_run_dependencies/rover_model\n'}
+[2.118362] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/ament_index/resource_index/parent_prefix_path/rover_model\n'}
+[2.129569] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/environment/ament_prefix_path.sh\n'}
+[2.133499] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/environment/ament_prefix_path.dsv\n'}
+[2.160362] (-) TimerEvent: {}
+[2.162128] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/environment/path.sh\n'}
+[2.177410] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/environment/path.dsv\n'}
+[2.259398] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/local_setup.bash\n'}
+[2.266184] (-) TimerEvent: {}
+[2.279585] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/local_setup.sh\n'}
+[2.287264] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/local_setup.zsh\n'}
+[2.292527] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/local_setup.dsv\n'}
+[2.304422] (rover_model) StdoutLine: {'line': b'-- Installing: /my_files/rovertest/install/rover_model/share/rover_model/package.dsv\n'}
+[2.310609] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/ament_index/resource_index/packages/rover_model\n'}
+[2.317479] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/cmake/rover_modelConfig.cmake\n'}
+[2.322644] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/cmake/rover_modelConfig-version.cmake\n'}
+[2.327580] (rover_model) StdoutLine: {'line': b'-- Up-to-date: /my_files/rovertest/install/rover_model/share/rover_model/package.xml\n'}
+[2.366518] (-) TimerEvent: {}
+[2.476320] (-) TimerEvent: {}
+[2.591675] (-) TimerEvent: {}
+[2.692803] (-) TimerEvent: {}
+[2.715784] (rover_model) CommandEnded: {'returncode': 0}
+[2.792968] (-) TimerEvent: {}
+[2.896374] (-) TimerEvent: {}
+[2.999918] (-) TimerEvent: {}
+[3.103808] (-) TimerEvent: {}
+[3.175239] (rover_cpp) JobEnded: {'identifier': 'rover_cpp', 'rc': 0}
+[3.184597] (rover_py) JobStarted: {'identifier': 'rover_py'}
+[3.204067] (-) TimerEvent: {}
+[3.306909] (-) TimerEvent: {}
+[3.408682] (-) TimerEvent: {}
+[3.544597] (-) TimerEvent: {}
+[3.655399] (-) TimerEvent: {}
+[3.782092] (-) TimerEvent: {}
+[3.890895] (-) TimerEvent: {}
+[3.994319] (-) TimerEvent: {}
+[4.016621] (rover_model) JobEnded: {'identifier': 'rover_model', 'rc': 0}
+[4.094586] (-) TimerEvent: {}
+[4.196013] (-) TimerEvent: {}
+[4.297978] (-) TimerEvent: {}
+[4.399877] (-) TimerEvent: {}
+[4.511964] (-) TimerEvent: {}
+[4.621309] (-) TimerEvent: {}
+[4.725215] (-) TimerEvent: {}
+[4.831007] (-) TimerEvent: {}
+[4.932996] (-) TimerEvent: {}
+[5.034982] (-) TimerEvent: {}
+[5.136533] (-) TimerEvent: {}
+[5.243427] (-) TimerEvent: {}
+[5.338546] (rover_py) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/rover_py', 'build', '--build-base', '/my_files/rovertest/build/rover_py/build', 'install', '--record', '/my_files/rovertest/build/rover_py/install.log', '--single-version-externally-managed'], 'cwd': '/my_files/rovertest/src/rover_py', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'HOSTNAME': '4ee67a4e4538', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'COLCON_PREFIX_PATH': '/my_files/rovertest/install:/my_files/armSim/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/my_files/rovertest/install/rover_py:/my_files/rovertest/install/rover_model:/my_files/rovertest/install/rover_cpp:/my_files/armSim/install/arm_cpp:/opt/ros/humble', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PASSWD': 'ubuntu', 'PWD': '/my_files/rovertest/build/rover_py', 'PYTHONPATH': '/my_files/rovertest/build/rover_py/prefix_override:/my_files/rovertest/install/rover_py/lib/python3.10/site-packages:/my_files/rovertest/install/rover_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/my_files/rovertest/install/rover_model:/my_files/rovertest/install/rover_cpp:/my_files/armSim/install/arm_cpp'}, 'shell': False}
+[5.361886] (-) TimerEvent: {}
+[5.463736] (-) TimerEvent: {}
+[5.566054] (-) TimerEvent: {}
+[5.668083] (-) TimerEvent: {}
+[5.688614] (rover_py) StdoutLine: {'line': b'running egg_info\n'}
+[5.692692] (rover_py) StdoutLine: {'line': b'writing ../../build/rover_py/rover_py.egg-info/PKG-INFO\n'}
+[5.700039] (rover_py) StdoutLine: {'line': b'writing dependency_links to ../../build/rover_py/rover_py.egg-info/dependency_links.txt\n'}
+[5.708287] (rover_py) StdoutLine: {'line': b'writing entry points to ../../build/rover_py/rover_py.egg-info/entry_points.txt\n'}
+[5.712391] (rover_py) StdoutLine: {'line': b'writing requirements to ../../build/rover_py/rover_py.egg-info/requires.txt\n'}
+[5.715702] (rover_py) StdoutLine: {'line': b'writing top-level names to ../../build/rover_py/rover_py.egg-info/top_level.txt\n'}
+[5.730316] (rover_py) StdoutLine: {'line': b"reading manifest file '../../build/rover_py/rover_py.egg-info/SOURCES.txt'\n"}
+[5.738551] (rover_py) StdoutLine: {'line': b"writing manifest file '../../build/rover_py/rover_py.egg-info/SOURCES.txt'\n"}
+[5.742209] (rover_py) StdoutLine: {'line': b'running build\n'}
+[5.746036] (rover_py) StdoutLine: {'line': b'running build_py\n'}
+[5.750140] (rover_py) StdoutLine: {'line': b'running install\n'}
+[5.753378] (rover_py) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[5.756366] (rover_py) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.759098] (rover_py) StdoutLine: {'line': b'running install_lib\n'}
+[5.765407] (rover_py) StdoutLine: {'line': b'running install_data\n'}
+[5.768349] (-) TimerEvent: {}
+[5.772983] (rover_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.781969] (rover_py) StdoutLine: {'line': b"removing '/my_files/rovertest/install/rover_py/lib/python3.10/site-packages/rover_py-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[5.798450] (rover_py) StdoutLine: {'line': b'Copying ../../build/rover_py/rover_py.egg-info to /my_files/rovertest/install/rover_py/lib/python3.10/site-packages/rover_py-0.0.0-py3.10.egg-info\n'}
+[5.868636] (-) TimerEvent: {}
+[5.888795] (rover_py) StdoutLine: {'line': b'running install_scripts\n'}
+[5.929872] (rover_py) StdoutLine: {'line': b'Installing simple_publisher script to /my_files/rovertest/install/rover_py/lib/rover_py\n'}
+[5.968863] (-) TimerEvent: {}
+[5.978593] (rover_py) StdoutLine: {'line': b"writing list of installed files to '/my_files/rovertest/build/rover_py/install.log'\n"}
+[6.023789] (rover_py) CommandEnded: {'returncode': 0}
+[6.070029] (-) TimerEvent: {}
+[6.171811] (-) TimerEvent: {}
+[6.186024] (rover_py) JobEnded: {'identifier': 'rover_py', 'rc': 0}
+[6.194954] (-) EventReactorShutdown: {}

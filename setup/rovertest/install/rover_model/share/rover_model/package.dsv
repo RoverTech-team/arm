@@ -1,0 +1,8 @@
+source;share/rover_model/hook/cmake_prefix_path.ps1
+source;share/rover_model/hook/cmake_prefix_path.dsv
+source;share/rover_model/hook/cmake_prefix_path.sh
+source;share/rover_model/local_setup.bash
+source;share/rover_model/local_setup.dsv
+source;share/rover_model/local_setup.ps1
+source;share/rover_model/local_setup.sh
+source;share/rover_model/local_setup.zsh

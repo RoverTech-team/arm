@@ -1,0 +1,23 @@
+[1.215s] Invoking command in '/my_files/rovertest/src/rover_py': PYTHONPATH=/my_files/rovertest/build/rover_py/prefix_override:/my_files/rovertest/install/rover_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/rover_py build --build-base /my_files/rovertest/build/rover_py/build install --record /my_files/rovertest/build/rover_py/install.log --single-version-externally-managed
+[1.487s] running egg_info
+[1.507s] writing ../../build/rover_py/rover_py.egg-info/PKG-INFO
+[1.513s] writing dependency_links to ../../build/rover_py/rover_py.egg-info/dependency_links.txt
+[1.518s] writing entry points to ../../build/rover_py/rover_py.egg-info/entry_points.txt
+[1.523s] writing requirements to ../../build/rover_py/rover_py.egg-info/requires.txt
+[1.527s] writing top-level names to ../../build/rover_py/rover_py.egg-info/top_level.txt
+[1.538s] reading manifest file '../../build/rover_py/rover_py.egg-info/SOURCES.txt'
+[1.544s] writing manifest file '../../build/rover_py/rover_py.egg-info/SOURCES.txt'
+[1.547s] running build
+[1.548s] running build_py
+[1.550s] running install
+[1.552s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.555s]   warnings.warn(
+[1.557s] running install_lib
+[1.560s] running install_data
+[1.561s] running install_egg_info
+[1.565s] removing '/my_files/rovertest/install/rover_py/lib/python3.10/site-packages/rover_py-0.0.0-py3.10.egg-info' (and everything under it)
+[1.572s] Copying ../../build/rover_py/rover_py.egg-info to /my_files/rovertest/install/rover_py/lib/python3.10/site-packages/rover_py-0.0.0-py3.10.egg-info
+[1.650s] running install_scripts
+[1.675s] Installing simple_publisher script to /my_files/rovertest/install/rover_py/lib/rover_py
+[1.684s] writing list of installed files to '/my_files/rovertest/build/rover_py/install.log'
+[1.715s] Invoked command in '/my_files/rovertest/src/rover_py' returned '0': PYTHONPATH=/my_files/rovertest/build/rover_py/prefix_override:/my_files/rovertest/install/rover_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/rover_py build --build-base /my_files/rovertest/build/rover_py/build install --record /my_files/rovertest/build/rover_py/install.log --single-version-externally-managed

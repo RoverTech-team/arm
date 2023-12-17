@@ -1,0 +1,20 @@
+[0.573s] Invoking command in '/my_files/rovertest/build/rover_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/my_files/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /my_files/rovertest/build/rover_cpp -- -j2 -l2
+[0.863s] Invoked command in '/my_files/rovertest/build/rover_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/my_files/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /my_files/rovertest/build/rover_cpp -- -j2 -l2
+[1.062s] Invoking command in '/my_files/rovertest/build/rover_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/my_files/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /my_files/rovertest/build/rover_cpp
+[1.133s] -- Install configuration: ""
+[1.141s] -- Up-to-date: /my_files/rovertest/install/rover_cpp/share/ament_index/resource_index/package_run_dependencies/rover_cpp
+[1.147s] -- Up-to-date: /my_files/rovertest/install/rover_cpp/share/ament_index/resource_index/parent_prefix_path/rover_cpp
+[1.162s] -- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/environment/ament_prefix_path.sh
+[1.175s] -- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/environment/ament_prefix_path.dsv
+[1.191s] -- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/environment/path.sh
+[1.263s] -- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/environment/path.dsv
+[1.355s] -- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/local_setup.bash
+[1.370s] -- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/local_setup.sh
+[1.386s] -- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/local_setup.zsh
+[1.440s] -- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/local_setup.dsv
+[1.517s] -- Installing: /my_files/rovertest/install/rover_cpp/share/rover_cpp/package.dsv
+[1.663s] -- Up-to-date: /my_files/rovertest/install/rover_cpp/share/ament_index/resource_index/packages/rover_cpp
+[2.017s] -- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/cmake/rover_cppConfig.cmake
+[2.039s] -- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/cmake/rover_cppConfig-version.cmake
+[2.074s] -- Up-to-date: /my_files/rovertest/install/rover_cpp/share/rover_cpp/package.xml
+[2.086s] Invoked command in '/my_files/rovertest/build/rover_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/my_files/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /my_files/rovertest/build/rover_cpp

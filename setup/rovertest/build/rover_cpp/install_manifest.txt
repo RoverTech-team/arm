@@ -1,0 +1,15 @@
+/my_files/rovertest/install/rover_cpp/share/ament_index/resource_index/package_run_dependencies/rover_cpp
+/my_files/rovertest/install/rover_cpp/share/ament_index/resource_index/parent_prefix_path/rover_cpp
+/my_files/rovertest/install/rover_cpp/share/rover_cpp/environment/ament_prefix_path.sh
+/my_files/rovertest/install/rover_cpp/share/rover_cpp/environment/ament_prefix_path.dsv
+/my_files/rovertest/install/rover_cpp/share/rover_cpp/environment/path.sh
+/my_files/rovertest/install/rover_cpp/share/rover_cpp/environment/path.dsv
+/my_files/rovertest/install/rover_cpp/share/rover_cpp/local_setup.bash
+/my_files/rovertest/install/rover_cpp/share/rover_cpp/local_setup.sh
+/my_files/rovertest/install/rover_cpp/share/rover_cpp/local_setup.zsh
+/my_files/rovertest/install/rover_cpp/share/rover_cpp/local_setup.dsv
+/my_files/rovertest/install/rover_cpp/share/rover_cpp/package.dsv
+/my_files/rovertest/install/rover_cpp/share/ament_index/resource_index/packages/rover_cpp
+/my_files/rovertest/install/rover_cpp/share/rover_cpp/cmake/rover_cppConfig.cmake
+/my_files/rovertest/install/rover_cpp/share/rover_cpp/cmake/rover_cppConfig-version.cmake
+/my_files/rovertest/install/rover_cpp/share/rover_cpp/package.xml

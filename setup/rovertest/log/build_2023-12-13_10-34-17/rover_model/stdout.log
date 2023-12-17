@@ -1,0 +1,36 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /my_files/rovertest/build/rover_model
+-- Install configuration: ""
+-- Installing: /my_files/rovertest/install/rover_model/share/ament_index/resource_index/package_run_dependencies/rover_model
+-- Installing: /my_files/rovertest/install/rover_model/share/ament_index/resource_index/parent_prefix_path/rover_model
+-- Installing: /my_files/rovertest/install/rover_model/share/rover_model/environment/ament_prefix_path.sh
+-- Installing: /my_files/rovertest/install/rover_model/share/rover_model/environment/ament_prefix_path.dsv
+-- Installing: /my_files/rovertest/install/rover_model/share/rover_model/environment/path.sh
+-- Installing: /my_files/rovertest/install/rover_model/share/rover_model/environment/path.dsv
+-- Installing: /my_files/rovertest/install/rover_model/share/rover_model/local_setup.bash
+-- Installing: /my_files/rovertest/install/rover_model/share/rover_model/local_setup.sh
+-- Installing: /my_files/rovertest/install/rover_model/share/rover_model/local_setup.zsh
+-- Installing: /my_files/rovertest/install/rover_model/share/rover_model/local_setup.dsv
+-- Installing: /my_files/rovertest/install/rover_model/share/rover_model/package.dsv
+-- Installing: /my_files/rovertest/install/rover_model/share/ament_index/resource_index/packages/rover_model
+-- Installing: /my_files/rovertest/install/rover_model/share/rover_model/cmake/rover_modelConfig.cmake
+-- Installing: /my_files/rovertest/install/rover_model/share/rover_model/cmake/rover_modelConfig-version.cmake
+-- Installing: /my_files/rovertest/install/rover_model/share/rover_model/package.xml

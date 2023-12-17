@@ -1,0 +1,6 @@
+Invoking command in '/my_files/rovertest/build/rover_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /my_files/rovertest/src/rover_cpp -DCMAKE_INSTALL_PREFIX=/my_files/rovertest/install/rover_cpp
+Invoked command in '/my_files/rovertest/build/rover_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /my_files/rovertest/src/rover_cpp -DCMAKE_INSTALL_PREFIX=/my_files/rovertest/install/rover_cpp
+Invoking command in '/my_files/rovertest/build/rover_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /my_files/rovertest/build/rover_cpp -- -j2 -l2
+Invoked command in '/my_files/rovertest/build/rover_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /my_files/rovertest/build/rover_cpp -- -j2 -l2
+Invoking command in '/my_files/rovertest/build/rover_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /my_files/rovertest/build/rover_cpp
+Invoked command in '/my_files/rovertest/build/rover_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /my_files/rovertest/build/rover_cpp

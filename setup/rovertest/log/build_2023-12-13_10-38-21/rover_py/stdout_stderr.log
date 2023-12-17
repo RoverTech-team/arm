@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/rover_py/rover_py.egg-info/PKG-INFO
+writing dependency_links to ../../build/rover_py/rover_py.egg-info/dependency_links.txt
+writing entry points to ../../build/rover_py/rover_py.egg-info/entry_points.txt
+writing requirements to ../../build/rover_py/rover_py.egg-info/requires.txt
+writing top-level names to ../../build/rover_py/rover_py.egg-info/top_level.txt
+reading manifest file '../../build/rover_py/rover_py.egg-info/SOURCES.txt'
+writing manifest file '../../build/rover_py/rover_py.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_data
+running install_egg_info
+removing '/my_files/rovertest/install/rover_py/lib/python3.10/site-packages/rover_py-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/rover_py/rover_py.egg-info to /my_files/rovertest/install/rover_py/lib/python3.10/site-packages/rover_py-0.0.0-py3.10.egg-info
+running install_scripts
+Installing simple_publisher script to /my_files/rovertest/install/rover_py/lib/rover_py
+writing list of installed files to '/my_files/rovertest/build/rover_py/install.log'
