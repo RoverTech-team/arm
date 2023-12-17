@@ -166,7 +166,7 @@ Ensure the fixed frame is set to "world," add "tf" and "robot model" with the de
 ### With launch.py
 (launch.py is located in rovertest/src/rover_model/launc)
 After creating the "launch.py" file, use the following command to launch RViz:
-
+(from an ubuntu terminal in the the vnc gui window)
 ```bash
 ros2 launch rover_model display.launch.py
 ```
@@ -175,7 +175,7 @@ ros2 launch rover_model display.launch.py
 ## Running Gazebo
 (gazebo.launch.py is located in rovertest/src/rover_model/launch)
 From "/my_files/rovertest," launch Gazebo:
-
+(from an ubuntu terminal in the the vnc gui window)
 ```bash
 ros2 launch rover_model gazebo.launch.py
 ```
