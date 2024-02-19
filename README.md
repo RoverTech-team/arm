@@ -21,13 +21,13 @@ When you use the docker run command, you are essentially instructing Docker to d
 MacOS:
 
 ```plaintext
-docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m -v /users/<username>:/my_files --name roverchallenge tiryoh/ros2-desktop-vnc:humble
+docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m -v /users/<username>/<path_to_github>:/github --name roverchallenge vossgit/ros-roverchallenge:2
 ```
 
 Windows:
 
 ```plaintext
-docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m -v C:\Users\<username>:/my_files --name roverchallenge tiryoh/ros2-desktop-vnc:humble
+docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m -v C:\Users\<username>\<path_to_github>:/github --name roverchallenge vossgit/ros-roverchallenge:2
 ```
 
 At this point you should get as output a bunch of `RUNNING state` lines and you can proceed.
