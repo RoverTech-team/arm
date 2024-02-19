@@ -141,10 +141,10 @@ ros2 launch rover_model gazebo.launch.py
 ```
 **Possible errors with gazebo**
 
-It might not start and give "segment not loaded" errors. To fix that start this **before** running gazebo.launch.py  
+It might not start and give "segment not loaded" errors. To fix that start this **before** running gazebo.launch.py in a different terminal 
 
 ```
-(toadd)
+gazebo -s libgazebo_ros_init.so -s libgazebo_ros_factory.so myworld.world
 ```
 
 
