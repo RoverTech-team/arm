@@ -69,6 +69,8 @@ The `-v /users/<username>/<path_to_github>:/github` part of the Docker run comma
 ---
 
 # Set up(host machine)
+the following commands are going to be executed from a terminal inside your host machine:
+
 After having entered the container with:
 
 ```
@@ -109,6 +111,8 @@ To visualize rviz and gazebo go to
 [﻿localhost:6080](http://localhost:6080) 
 
 you should see a vnc viewer screen. Connect.
+
+the following commands are going to be executed inside the ubuntu gui from the vnc viewer on localhost:6080
 
 
 at the moment we have to initialize ros like this (work is in the process to remove this)
