@@ -152,7 +152,7 @@ gazebo -s libgazebo_ros_init.so -s libgazebo_ros_factory.so myworld.world
 
 
 
-# When to use colcon and when setup and recurring instructions to set up a terminal
+# Recurring instructions to set up a terminal. When to use colcon and when install 
 
 
 **note**
