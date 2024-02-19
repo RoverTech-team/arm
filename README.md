@@ -96,8 +96,10 @@ colcon build
 if the colcon build does not instantly work try to 
 
 ```
-(toadd)
+colcon build --cmake-clean-cache
 ```
+checkout: https://answers.ros.org/question/333534/when-to-use-cmake-cleanconfigure/
+
 ---
 
 # VNC + GUI (ubuntu)
