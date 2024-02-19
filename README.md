@@ -97,8 +97,11 @@ We have to set the command line to use bash by writing
 ```
 bash
 ```
+let's source ROS 2
+```
+. /opt/ros/humble/local_setup.bash 
+```
 navigate into
-
 ```
 cd github/arm/setup/rovertest
 ```
@@ -131,7 +134,7 @@ you should see a vnc viewer screen. Connect.
 the following commands are going to be executed inside the ubuntu gui from the vnc viewer on localhost:6080
 
 
-at the moment we have to initialize ros like this (work is in the process to remove this)
+to source ROS 2
 ```
 . /opt/ros/humble/local_setup.bash 
 ```
@@ -179,7 +182,7 @@ gazebo -s libgazebo_ros_init.so -s libgazebo_ros_factory.so myworld.world
 
 
 **note**
-every time we open a new terminal at the moment we have to initialize ros like this (work is in the process to remove this)
+every time we open a new terminal at the moment we have to source ROS 2
 ```
 . /opt/ros/humble/local_setup.bash 
 ```
