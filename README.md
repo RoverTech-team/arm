@@ -1,10 +1,17 @@
-# arm
+# ROS2 development setup
+
+
+
+This is a guide to make the setup process easier for everyone, some may find the steps trivial but it's to get everybody on board before we start the development.
 
 ### Install Docker
-https://www.docker.com/products/docker-desktop/
+[﻿https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/) 
 
+**Possible errors**
+
+- you have to enable hardware assisted virtualization on windows [﻿forums.docker.com/t/hardware-assisted-virtualization-and-data-execution-protection-must-be-enabled-in-the-bios/109073](https://forums.docker.com/t/hardware-assisted-virtualization-and-data-execution-protection-must-be-enabled-in-the-bios/109073) 
+- if you have an older version of operating system you may want to install an older version of docker [﻿docs.docker.com/desktop/release-notes/](https://docs.docker.com/desktop/release-notes/) 
 ### Description
-
 This Docker container is set up for running a robotic simulation environment with the following specifications:
 
 **ROS Version:** The container is configured to run with ROS (Robot Operating System) in the "Humble" release.
@@ -13,47 +20,159 @@ This Docker container is set up for running a robotic simulation environment wit
 
 **Operating System:** The base operating system is Ubuntu 22.04.3 LTS.
 
-### Command to Install the container
 
-From the Terminal (macOS) or PowerShell (Windows):
-When you use the docker run command, you are essentially instructing Docker to download an image from a container registry (if the image is not already present locally) and then run a container based on that image.
 
 MacOS:
 
-```plaintext
+```
 docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m -v /users/<username>/<path_to_github>:/github --name roverchallenge vossgit/ros-roverchallenge:2
 ```
-
 Windows:
 
-```plaintext
+```
 docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m -v C:\Users\<username>\<path_to_github>:/github --name roverchallenge vossgit/ros-roverchallenge:2
 ```
-
 At this point you should get as output a bunch of `RUNNING state` lines and you can proceed.
 
-### Accessing the GUI
 
+
+note: replace the whole string like <username> -> gabrielvoss same with <path_to_github>
+
+
+
+### Accessing the GUI
 After running the container, you can access the graphical user interface (GUI) by opening a web browser and navigating to `http://localhost:6080`. The container exposes the GUI on port 6080, allowing you to interact with the simulation environment.
 
+To restart the container when closed(you should always have the docker app running in the background) in the computer terminal/shell write:docker start roverchallenge
+
+
+
 ### To restart the container when closed
-(you should always have the docker app running in the background)
-in the computer terminal/shell write:
-```plaintext
+(you should always have the docker app running in the background) in the computer terminal/shell write:
+
+```
 docker start roverchallenge
 ```
-
-
+```
+docker exec -it roverchallenge /bin/sh
+```
 ### Note
-
-The `-v /users/<username>:/my_files` part of the Docker run command establishes a volume mount. This allows you to share data between your host machine and the Docker container. Here's a breakdown of this volume mount:
+The `-v /users/<username>:/github` part of the Docker run command establishes a volume mount. This allows you to share data between your host machine and the Docker container. Here's a breakdown of this volume mount:
 
 `/users/<username>`: Replace `<username>` with the actual username or path on your host machine that you want to make accessible to the Docker container.
 
-`:/my_files`: This is the path inside the Docker container where the shared data will be available. In this case, it's mounted at `/my_files`.
+`:/github`: This is the path inside the Docker container where the shared data will be available. In this case, it's mounted at `/github`.
 
-### Troubleshooting
+---
 
-In case the volume mount does not work:  
-In the Docker Preferences or Settings window, find and click on the "Resources" tab.  
-File Sharing Section: Look for a section titled "File Sharing" or a similar name. This is where you specify which paths on your host machine should be accessible to Docker containers.
+# Set up(host machine)
+After having entered the container with:
+
+```
+docker exec -it roverchallenge /bin/sh
+```
+We have to set the command line to use bash by writing
+
+```
+bash
+```
+navigate into
+
+```
+cd github/arm/setup/rovertest
+```
+where we are going to build the cmake files and install the packages
+
+```
+colcon build
+```
+```
+. install/setup.bash
+```
+**Possible errors**
+
+if the colcon build does not instantly work try to 
+
+```
+(toadd)
+```
+---
+
+# VNC + GUI (ubuntu)
+To visualize rviz and gazebo go to 
+
+[﻿localhost:6080](https://link-url-here.org/) 
+
+you should see a vnc viewer screen. Connect.
+
+
+
+Now open a terminal with the terminator app 
+
+now we can navigate to the system folder of ubuntu (which is simply /) with
+
+```
+cd ../../
+```
+navigate into
+
+```
+cd github/arm/setup/rovertest
+```
+then let's setup the packages with
+
+```
+. install/setup.bash
+```
+**Start rviz**
+
+```
+ros2 launch rover_model display.launch.py
+```
+**Start gazebo**
+
+```
+ros2 launch rover_model gazebo.launch.py
+```
+**Possible errors with gazebo**
+
+It might not start and give "segment not loaded" errors. To fix that start this **before** running gazebo.launch.py  
+
+```
+(toadd)
+```
+
+
+
+
+
+
+# When to use colcon and when setup
+
+
+**colcon **
+
+```
+colcon build 
+```
+it's made to build the env, we use it each time we edit the files inside rover_model (same for any other ros package). It updates the files inside of rovertest/build/rover_model. 
+
+Therefore we always want to execute this command from 
+
+```
+cd github/arm/setup/rovertest
+```
+**setup**
+
+```
+. install/setup.bash
+```
+this command is used for installing all the packages in our current session of the terminal, therefore we need to execute it **all the times** that we open a **new terminal**, both when we are on the **HOST MACHINE** and when we are on the** localhost:6080** page accessing the ubuntu gui
+
+we execute it from  
+
+```
+cd github/arm/setup/rovertest
+```
+****
+
