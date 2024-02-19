@@ -103,7 +103,7 @@ if the colcon build does not instantly work try to
 # VNC + GUI (ubuntu)
 To visualize rviz and gazebo go to 
 
-[﻿localhost:6080](localhost:6080) 
+[﻿localhost:6080](https://localhost:6080) 
 
 you should see a vnc viewer screen. Connect.
 
