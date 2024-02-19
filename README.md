@@ -22,7 +22,17 @@ This Docker container is set up for running a robotic simulation environment wit
 
 **Operating System:** The base operating system is Ubuntu 22.04.3 LTS.
 
+---
 
+# Set up(github)
+
+https://desktop.github.com/
+
+Download github desktop and clone this repository (arm). By doing open in finder/file explorer you will be able to locate the folder GitHub on your computer. Save the absolute path of this folder.
+
+From github desktop you can open the whole arm repository on vscode.
+
+---
 
 MacOS:
 
@@ -32,13 +42,13 @@ docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m -v /user
 Windows:
 
 ```
-docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m -v C:\<path_to_github>:/github --name roverchallenge vossgit/ros-roverchallenge:2
+docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m -v C:\<absolute_path_to_github>:/github --name roverchallenge vossgit/ros-roverchallenge:2
 ```
 At this point you should get as output a bunch of `RUNNING state` lines and you can proceed.
 
 
 
-note: replace the whole string like <username> -> gabrielvoss same with <path_to_github>
+note: replace for example the whole string like <absolute_path_to_github> -> /user/doc/github 
 
 
 
@@ -67,6 +77,7 @@ The `-v /users/<username>/<path_to_github>:/github` part of the Docker run comma
 `:/github`: This is the path inside the Docker container where the shared data will be available. In this case, it's mounted at `/github`.
 
 ---
+
 
 # Set up(host machine)
 the following commands are going to be executed from a terminal inside your host machine:
