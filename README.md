@@ -1,6 +1,9 @@
-![diagram-export-19-2-2024-15_55_34](https://github.com/RoverTech-team/arm/assets/49610092/1f6bd142-8c0c-4def-ab68-5a0c6c00acd4)# ROS2 development setup
+![diagram-export-19-2-2024-15_55_34](https://github.com/RoverTech-team/arm/assets/49610092/1f6bd142-8c0c-4def-ab68-5a0c6c00acd4)
 
 
+
+
+# ROS2 development setup
 
 This is a guide to make the setup process easier for everyone, some may find the steps trivial but it's to get everybody on board before we start the development.
 
