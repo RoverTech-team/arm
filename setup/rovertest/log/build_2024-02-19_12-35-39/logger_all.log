@@ -1,0 +1,16 @@
+[0.850s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.851s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f1398ae22c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1398ae2b30>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1398ae2b30>>)
+[0.856s] ERROR:colcon:colcon build: [Errno 2] No such file or directory: 'build/.built_by'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/command.py", line 522, in verb_main
+    rc = context.args.main(context=context)
+  File "/usr/lib/python3/dist-packages/colcon_core/verb/build.py", line 124, in main
+    check_and_mark_build_tool(context.args.build_base)
+  File "/usr/lib/python3/dist-packages/colcon_core/verb/__init__.py", line 79, in check_and_mark_build_tool
+    previous_build_tool = marker_path.read_text().rstrip()
+  File "/usr/lib/python3.10/pathlib.py", line 1134, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: 'build/.built_by'
+

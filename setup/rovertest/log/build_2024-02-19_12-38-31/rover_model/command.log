@@ -1,0 +1,4 @@
+Invoking command in '/github/arm/setup/rovertest/build/rover_model': /usr/bin/cmake --build /github/arm/setup/rovertest/build/rover_model -- -j4 -l4
+Invoked command in '/github/arm/setup/rovertest/build/rover_model' returned '0': /usr/bin/cmake --build /github/arm/setup/rovertest/build/rover_model -- -j4 -l4
+Invoking command in '/github/arm/setup/rovertest/build/rover_model': /usr/bin/cmake --install /github/arm/setup/rovertest/build/rover_model
+Invoked command in '/github/arm/setup/rovertest/build/rover_model' returned '0': /usr/bin/cmake --install /github/arm/setup/rovertest/build/rover_model
