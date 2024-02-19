@@ -197,7 +197,7 @@ cd github/arm/setup/rovertest
 ```
 . install/setup.bash
 ```
-this command is used for installing all the packages in our current session of the terminal, therefore we need to execute it **all the times** that we open a **new terminal**, both when we are on the **HOST MACHINE** and when we are on the **localhost:6080** page accessing the ubuntu gui
+this command is used for installing all the packages in our current session of the terminal, therefore we need to execute it **all the times** that we open a **new terminal**, both when we are on the **HOST MACHINE** and when we are on **UBUNTU** using the localhost:6080 page 
 
 we execute it from  
 
