@@ -32,7 +32,7 @@ docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m -v /user
 Windows:
 
 ```
-docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m -v C:\Users\<username>\<path_to_github>:/github --name roverchallenge vossgit/ros-roverchallenge:2
+docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m -v C:\<path_to_github>:/github --name roverchallenge vossgit/ros-roverchallenge:2
 ```
 At this point you should get as output a bunch of `RUNNING state` lines and you can proceed.
 
@@ -59,9 +59,10 @@ docker start roverchallenge
 docker exec -it roverchallenge /bin/sh
 ```
 ### Note
-The `-v /users/<username>:/github` part of the Docker run command establishes a volume mount. This allows you to share data between your host machine and the Docker container. Here's a breakdown of this volume mount:
+The `-v /users/<username>/<path_to_github>:/github` part of the Docker run command establishes a volume mount. This allows you to share data between your host machine and the Docker container. Here's a breakdown of this volume mount:
 
-`/users/<username>`: Replace `<username>` with the actual username or path on your host machine that you want to make accessible to the Docker container.
+
+`/users/<username>/<path_to_github>`: with the actual path on your host machine that corresponds to the github folder, that way it will be accessible from the Docker container.
 
 `:/github`: This is the path inside the Docker container where the shared data will be available. In this case, it's mounted at `/github`.
 
@@ -98,7 +99,7 @@ if the colcon build does not instantly work try to
 ```
 colcon build --cmake-clean-cache
 ```
-checkout: https://answers.ros.org/question/333534/when-to-use-cmake-cleanconfigure/
+[﻿source and more commands](https://answers.ros.org/question/333534/when-to-use-cmake-cleanconfigure/)
 
 ---
 
