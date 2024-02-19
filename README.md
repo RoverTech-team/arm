@@ -152,7 +152,7 @@ gazebo -s libgazebo_ros_init.so -s libgazebo_ros_factory.so myworld.world
 
 
 
-# When to use colcon and when setup
+# When to use colcon and when setup and recurring instructions to set up a terminal
 
 
 **note**
@@ -160,6 +160,25 @@ every time we open a new terminal at the moment we have to initialize ros like t
 ```
 . /opt/ros/humble/local_setup.bash 
 ```
+
+**first commads if you are on vnc ubuntu**
+```
+cd ../../
+```
+navigate into
+
+```
+cd github/arm/setup/rovertest
+```
+
+**first commads if you are on the host machine**
+```
+bash
+```
+```
+cd github/arm/setup/rovertest
+```
+
 
 **colcon**
 
