@@ -165,8 +165,6 @@ every time we open a new terminal at the moment we have to initialize ros like t
 ```
 cd ../../
 ```
-navigate into
-
 ```
 cd github/arm/setup/rovertest
 ```
