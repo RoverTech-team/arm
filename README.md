@@ -169,6 +169,7 @@ ros2 launch rover_model gazebo.launch.py
 
 It might not start and give "waiting for serviece /spawn_entity" logs and in the end it could retourn "process has died". To fix that start this **before** running gazebo.launch.py in a different terminal 
 
+if it still does not start restarting the whole docker container often helps
 ```
 gazebo -s libgazebo_ros_init.so -s libgazebo_ros_factory.so myworld.world
 ```
