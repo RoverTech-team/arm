@@ -41,12 +41,12 @@ From github desktop you can open the whole arm repository on vscode.
 MacOS:
 
 ```
-docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m -v /users/<username>/<path_to_github>:/github --name roverchallenge vossgit/ros-roverchallenge:2
+docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m -v /users/<username>/<path_to_github>:/github --name roverchallenge vossgit/ros-roverchallenge:stable
 ```
 Windows:
 
 ```
-docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m -v C:\<absolute_path_to_github>:/github --name roverchallenge vossgit/ros-roverchallenge:2
+docker run -p 6080:80 --security-opt seccomp=unconfined --shm-size=512m -v C:\<absolute_path_to_github>:/github --name roverchallenge vossgit/ros-roverchallenge:stable
 ```
 At this point you should get as output a bunch of `RUNNING state` lines and you can proceed.
 
