@@ -107,7 +107,10 @@ To visualize rviz and gazebo go to
 you should see a vnc viewer screen. Connect.
 
 
-
+at the moment we have to initialize ros like this (work is in the process to remove this)
+```
+. /opt/ros/humble/local_setup.bash 
+```
 Now open a terminal with the terminator app 
 
 now we can navigate to the system folder of ubuntu (which is simply /) with
@@ -151,7 +154,13 @@ It might not start and give "segment not loaded" errors. To fix that start this 
 # When to use colcon and when setup
 
 
-**colcon **
+**note**
+every time we open a new terminal at the moment we have to initialize ros like this (work is in the process to remove this)
+```
+. /opt/ros/humble/local_setup.bash 
+```
+
+**colcon**
 
 ```
 colcon build 
@@ -168,12 +177,15 @@ cd github/arm/setup/rovertest
 ```
 . install/setup.bash
 ```
-this command is used for installing all the packages in our current session of the terminal, therefore we need to execute it **all the times** that we open a **new terminal**, both when we are on the **HOST MACHINE** and when we are on the** localhost:6080** page accessing the ubuntu gui
+this command is used for installing all the packages in our current session of the terminal, therefore we need to execute it **all the times** that we open a **new terminal**, both when we are on the **HOST MACHINE** and when we are on the **localhost:6080** page accessing the ubuntu gui
 
 we execute it from  
 
 ```
 cd github/arm/setup/rovertest
 ```
+
+
+
 ****
 
