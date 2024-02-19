@@ -165,9 +165,9 @@ ros2 launch rover_model display.launch.py
 ```
 ros2 launch rover_model gazebo.launch.py
 ```
-**Possible errors with gazebo**
+**if gazebo is slow**
 
-It might not start and give "segment not loaded" errors or the model might not load. To fix that start this **before** running gazebo.launch.py in a different terminal 
+It might not start and give "waiting for serviece /spawn_entity" logs and in the end it could retourn "process has died". To fix that start this **before** running gazebo.launch.py in a different terminal 
 
 ```
 gazebo -s libgazebo_ros_init.so -s libgazebo_ros_factory.so myworld.world
