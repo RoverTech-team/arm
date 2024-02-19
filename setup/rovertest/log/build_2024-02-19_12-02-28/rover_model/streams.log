@@ -1,0 +1,40 @@
+[0.079s] Invoking command in '/github/arm/setup/rovertest/build/rover_model': /usr/bin/cmake /github/arm/setup/rovertest/src/rover_model -DCMAKE_INSTALL_PREFIX=/github/arm/setup/rovertest/install/rover_model
+[0.652s] -- The C compiler identification is unknown
+[1.250s] -- The CXX compiler identification is unknown
+[1.279s] -- Detecting C compiler ABI info
+[1.571s] -- Detecting C compiler ABI info - failed
+[1.573s] -- Check for working C compiler: /usr/bin/cc
+[1.810s] -- Check for working C compiler: /usr/bin/cc - broken
+[1.813s] [31mCMake Error at /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake:69 (message):
+[1.816s]   The C compiler
+[1.819s] 
+[1.821s]     "/usr/bin/cc"
+[1.824s] 
+[1.827s]   is not able to compile a simple test program.
+[1.829s] 
+[1.832s]   It fails with the following output:
+[1.834s] 
+[1.836s]     Change Dir: /github/arm/setup/rovertest/build/rover_model/CMakeFiles/CMakeTmp
+[1.838s]     
+[1.841s]     Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e04e2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e04e2.dir/build.make CMakeFiles/cmTC_e04e2.dir/build
+[1.843s]     gmake[1]: Entering directory '/github/arm/setup/rovertest/build/rover_model/CMakeFiles/CMakeTmp'
+[1.846s]     Building C object CMakeFiles/cmTC_e04e2.dir/testCCompiler.c.o
+[1.851s]     /usr/bin/cc    -o CMakeFiles/cmTC_e04e2.dir/testCCompiler.c.o -c /github/arm/setup/rovertest/build/rover_model/CMakeFiles/CMakeTmp/testCCompiler.c
+[1.854s]     Cannot create temporary file in /var/tmp/: Read-only file system
+[1.856s]     gmake[1]: *** [CMakeFiles/cmTC_e04e2.dir/build.make:78: CMakeFiles/cmTC_e04e2.dir/testCCompiler.c.o] Aborted
+[1.858s]     gmake[1]: Leaving directory '/github/arm/setup/rovertest/build/rover_model/CMakeFiles/CMakeTmp'
+[1.862s]     gmake: *** [Makefile:127: cmTC_e04e2/fast] Error 2
+[1.865s]     
+[1.867s]     
+[1.871s] 
+[1.876s]   
+[1.878s] 
+[1.882s]   CMake will not be able to correctly generate this project.
+[1.887s] Call Stack (most recent call first):
+[1.893s]   CMakeLists.txt:2 (project)
+[1.896s] 
+[1.899s] [0m
+[1.903s] -- Configuring incomplete, errors occurred!
+[1.906s] See also "/github/arm/setup/rovertest/build/rover_model/CMakeFiles/CMakeOutput.log".
+[1.908s] See also "/github/arm/setup/rovertest/build/rover_model/CMakeFiles/CMakeError.log".
+[1.910s] Invoked command in '/github/arm/setup/rovertest/build/rover_model' returned '1': /usr/bin/cmake /github/arm/setup/rovertest/src/rover_model -DCMAKE_INSTALL_PREFIX=/github/arm/setup/rovertest/install/rover_model

@@ -1,0 +1,34 @@
+[0.163s] Invoking command in '/github/arm/setup/rovertest/build/rover_model': /usr/bin/cmake /github/arm/setup/rovertest/src/rover_model -DCMAKE_INSTALL_PREFIX=/github/arm/setup/rovertest/install/rover_model
+[0.705s] -- The C compiler identification is GNU 11.4.0
+[1.079s] -- The CXX compiler identification is GNU 11.4.0
+[1.128s] -- Detecting C compiler ABI info
+[1.737s] -- Detecting C compiler ABI info - done
+[1.766s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.770s] -- Detecting C compile features
+[1.776s] -- Detecting C compile features - done
+[1.809s] -- Detecting CXX compiler ABI info
+[2.373s] -- Detecting CXX compiler ABI info - done
+[2.420s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.423s] -- Detecting CXX compile features
+[2.427s] -- Detecting CXX compile features - done
+[2.525s] [31mCMake Error at CMakeLists.txt:9 (find_package):
+[2.528s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[2.531s]   has asked CMake to find a package configuration file provided by
+[2.534s]   "ament_cmake", but CMake did not find one.
+[2.538s] 
+[2.546s]   Could not find a package configuration file provided by "ament_cmake" with
+[2.549s]   any of the following names:
+[2.558s] 
+[2.560s]     ament_cmakeConfig.cmake
+[2.563s]     ament_cmake-config.cmake
+[2.566s] 
+[2.569s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[2.572s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[2.575s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[2.578s]   has been installed.
+[2.581s] 
+[2.583s] [0m
+[2.587s] -- Configuring incomplete, errors occurred!
+[2.591s] See also "/github/arm/setup/rovertest/build/rover_model/CMakeFiles/CMakeOutput.log".
+[2.594s] See also "/github/arm/setup/rovertest/build/rover_model/CMakeFiles/CMakeError.log".
+[2.597s] Invoked command in '/github/arm/setup/rovertest/build/rover_model' returned '1': /usr/bin/cmake /github/arm/setup/rovertest/src/rover_model -DCMAKE_INSTALL_PREFIX=/github/arm/setup/rovertest/install/rover_model

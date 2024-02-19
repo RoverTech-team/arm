@@ -1,8 +1,8 @@
-# Install script for directory: /my_files/rovertest/src/rover_model
+# Install script for directory: /github/arm/setup/rovertest/src/rover_model
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/my_files/rovertest/install/rover_model")
+  set(CMAKE_INSTALL_PREFIX "/github/arm/setup/rovertest/install/rover_model")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,19 +44,19 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model" TYPE DIRECTORY FILES
-    "/my_files/rovertest/src/rover_model/meshes"
-    "/my_files/rovertest/src/rover_model/urdf"
-    "/my_files/rovertest/src/rover_model/launch"
-    "/my_files/rovertest/src/rover_model/rviz"
+    "/github/arm/setup/rovertest/src/rover_model/meshes"
+    "/github/arm/setup/rovertest/src/rover_model/urdf"
+    "/github/arm/setup/rovertest/src/rover_model/launch"
+    "/github/arm/setup/rovertest/src/rover_model/rviz"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/my_files/rovertest/build/rover_model/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/rover_model")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/github/arm/setup/rovertest/build/rover_model/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/rover_model")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/my_files/rovertest/build/rover_model/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/rover_model")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/github/arm/setup/rovertest/build/rover_model/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/rover_model")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -64,7 +64,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model/environment" TYPE FILE FILES "/my_files/rovertest/build/rover_model/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model/environment" TYPE FILE FILES "/github/arm/setup/rovertest/build/rover_model/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -72,42 +72,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model/environment" TYPE FILE FILES "/my_files/rovertest/build/rover_model/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model/environment" TYPE FILE FILES "/github/arm/setup/rovertest/build/rover_model/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model" TYPE FILE FILES "/my_files/rovertest/build/rover_model/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model" TYPE FILE FILES "/github/arm/setup/rovertest/build/rover_model/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model" TYPE FILE FILES "/my_files/rovertest/build/rover_model/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model" TYPE FILE FILES "/github/arm/setup/rovertest/build/rover_model/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model" TYPE FILE FILES "/my_files/rovertest/build/rover_model/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model" TYPE FILE FILES "/github/arm/setup/rovertest/build/rover_model/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model" TYPE FILE FILES "/my_files/rovertest/build/rover_model/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model" TYPE FILE FILES "/github/arm/setup/rovertest/build/rover_model/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model" TYPE FILE FILES "/my_files/rovertest/build/rover_model/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model" TYPE FILE FILES "/github/arm/setup/rovertest/build/rover_model/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/my_files/rovertest/build/rover_model/ament_cmake_index/share/ament_index/resource_index/packages/rover_model")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/github/arm/setup/rovertest/build/rover_model/ament_cmake_index/share/ament_index/resource_index/packages/rover_model")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model/cmake" TYPE FILE FILES
-    "/my_files/rovertest/build/rover_model/ament_cmake_core/rover_modelConfig.cmake"
-    "/my_files/rovertest/build/rover_model/ament_cmake_core/rover_modelConfig-version.cmake"
+    "/github/arm/setup/rovertest/build/rover_model/ament_cmake_core/rover_modelConfig.cmake"
+    "/github/arm/setup/rovertest/build/rover_model/ament_cmake_core/rover_modelConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model" TYPE FILE FILES "/my_files/rovertest/src/rover_model/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rover_model" TYPE FILE FILES "/github/arm/setup/rovertest/src/rover_model/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -118,5 +118,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/my_files/rovertest/build/rover_model/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/github/arm/setup/rovertest/build/rover_model/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

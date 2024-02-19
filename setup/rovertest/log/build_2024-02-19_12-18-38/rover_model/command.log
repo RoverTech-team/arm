@@ -1,0 +1,4 @@
+Invoking command in '/github/arm/setup/rovertest/build/rover_model': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/rover_model -- -j4 -l4
+Invoked command in '/github/arm/setup/rovertest/build/rover_model' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/rover_model -- -j4 -l4
+Invoking command in '/github/arm/setup/rovertest/build/rover_model': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/rover_model
+Invoked command in '/github/arm/setup/rovertest/build/rover_model' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/rover_model

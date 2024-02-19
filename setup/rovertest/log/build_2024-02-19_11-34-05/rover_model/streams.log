@@ -1,0 +1,6 @@
+[0.135s] Invoking command in '/github/arm/setup/rovertest/build/rover_model': /usr/bin/cmake --build /github/arm/setup/rovertest/build/rover_model -- -j4 -l4
+[0.222s] [0mCMake Error: The current CMakeCache.txt directory /github/arm/setup/rovertest/build/rover_model/CMakeCache.txt is different than the directory /my_files/rovertest/build/rover_model where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.313s] [0mCMake Error: The source directory "/my_files/rovertest/src/rover_model" does not exist.
+[0.315s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.328s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.333s] Invoked command in '/github/arm/setup/rovertest/build/rover_model' returned '2': /usr/bin/cmake --build /github/arm/setup/rovertest/build/rover_model -- -j4 -l4

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /my_files/rovertest/src/rover_model
+CMAKE_SOURCE_DIR = /github/arm/setup/rovertest/src/rover_model
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /my_files/rovertest/build/rover_model
+CMAKE_BINARY_DIR = /github/arm/setup/rovertest/build/rover_model
 
 # Utility rule file for rover_model_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/rover_model_uninstall.dir/compiler_depend.make
 include CMakeFiles/rover_model_uninstall.dir/progress.make
 
 CMakeFiles/rover_model_uninstall:
-	/usr/bin/cmake -P /my_files/rovertest/build/rover_model/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /github/arm/setup/rovertest/build/rover_model/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 rover_model_uninstall: CMakeFiles/rover_model_uninstall
 rover_model_uninstall: CMakeFiles/rover_model_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/rover_model_uninstall.dir/clean:
 .PHONY : CMakeFiles/rover_model_uninstall.dir/clean
 
 CMakeFiles/rover_model_uninstall.dir/depend:
-	cd /my_files/rovertest/build/rover_model && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /my_files/rovertest/src/rover_model /my_files/rovertest/src/rover_model /my_files/rovertest/build/rover_model /my_files/rovertest/build/rover_model /my_files/rovertest/build/rover_model/CMakeFiles/rover_model_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /github/arm/setup/rovertest/build/rover_model && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /github/arm/setup/rovertest/src/rover_model /github/arm/setup/rovertest/src/rover_model /github/arm/setup/rovertest/build/rover_model /github/arm/setup/rovertest/build/rover_model /github/arm/setup/rovertest/build/rover_model/CMakeFiles/rover_model_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rover_model_uninstall.dir/depend
 

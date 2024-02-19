@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /my_files/rovertest/src/rover_model
+CMAKE_SOURCE_DIR = /github/arm/setup/rovertest/src/rover_model
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /my_files/rovertest/build/rover_model
+CMAKE_BINARY_DIR = /github/arm/setup/rovertest/build/rover_model
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /my_files/rovertest/build/rover_model/CMakeFiles /my_files/rovertest/build/rover_model//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /github/arm/setup/rovertest/build/rover_model/CMakeFiles /github/arm/setup/rovertest/build/rover_model//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /my_files/rovertest/build/rover_model/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /github/arm/setup/rovertest/build/rover_model/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

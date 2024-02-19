@@ -1,0 +1,67 @@
+[0.000000] (-) TimerEvent: {}
+[0.001849] (rover_model) JobQueued: {'identifier': 'rover_model', 'dependencies': OrderedDict()}
+[0.003588] (rover_model) JobStarted: {'identifier': 'rover_model'}
+[0.044828] (rover_model) JobProgress: {'identifier': 'rover_model', 'progress': 'cmake'}
+[0.050627] (rover_model) Command: {'cmd': ['/usr/bin/cmake', '/github/arm/setup/rovertest/src/rover_model', '-DCMAKE_INSTALL_PREFIX=/github/arm/setup/rovertest/install/rover_model'], 'cwd': '/github/arm/setup/rovertest/build/rover_model', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('HOSTNAME', '21ba21a15cfb'), ('SHLVL', '1'), ('HOME', '/root'), ('OLDPWD', '/github/arm/setup'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PASSWD', 'ubuntu'), ('PWD', '/github/arm/setup/rovertest/build/rover_model'), ('COLCON', '1')]), 'shell': False}
+[0.096061] (-) TimerEvent: {}
+[0.197155] (-) TimerEvent: {}
+[0.298316] (-) TimerEvent: {}
+[0.399947] (-) TimerEvent: {}
+[0.503082] (-) TimerEvent: {}
+[0.604034] (-) TimerEvent: {}
+[0.705136] (-) TimerEvent: {}
+[0.750401] (rover_model) StdoutLine: {'line': b'-- The C compiler identification is unknown\n'}
+[0.805311] (-) TimerEvent: {}
+[0.906739] (-) TimerEvent: {}
+[1.007717] (-) TimerEvent: {}
+[1.109884] (-) TimerEvent: {}
+[1.210834] (-) TimerEvent: {}
+[1.311999] (-) TimerEvent: {}
+[1.348692] (rover_model) StdoutLine: {'line': b'-- The CXX compiler identification is unknown\n'}
+[1.386915] (rover_model) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.412152] (-) TimerEvent: {}
+[1.513286] (-) TimerEvent: {}
+[1.614557] (-) TimerEvent: {}
+[1.646897] (rover_model) StdoutLine: {'line': b'-- Detecting C compiler ABI info - failed\n'}
+[1.651718] (rover_model) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.714749] (-) TimerEvent: {}
+[1.816672] (-) TimerEvent: {}
+[1.919932] (-) TimerEvent: {}
+[1.941161] (rover_model) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - broken\n'}
+[1.944394] (rover_model) StderrLine: {'line': b'\x1b[31mCMake Error at /usr/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake:69 (message):\n'}
+[1.946775] (rover_model) StderrLine: {'line': b'  The C compiler\n'}
+[1.948887] (rover_model) StderrLine: {'line': b'\n'}
+[1.950916] (rover_model) StderrLine: {'line': b'    "/usr/bin/cc"\n'}
+[1.955913] (rover_model) StderrLine: {'line': b'\n'}
+[1.959548] (rover_model) StderrLine: {'line': b'  is not able to compile a simple test program.\n'}
+[1.962496] (rover_model) StderrLine: {'line': b'\n'}
+[1.965511] (rover_model) StderrLine: {'line': b'  It fails with the following output:\n'}
+[1.967736] (rover_model) StderrLine: {'line': b'\n'}
+[1.970023] (rover_model) StderrLine: {'line': b'    Change Dir: /github/arm/setup/rovertest/build/rover_model/CMakeFiles/CMakeTmp\n'}
+[1.972468] (rover_model) StderrLine: {'line': b'    \n'}
+[1.975920] (rover_model) StderrLine: {'line': b'    Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_66bf6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_66bf6.dir/build.make CMakeFiles/cmTC_66bf6.dir/build\n'}
+[1.979190] (rover_model) StderrLine: {'line': b"    gmake[1]: Entering directory '/github/arm/setup/rovertest/build/rover_model/CMakeFiles/CMakeTmp'\n"}
+[1.984152] (rover_model) StderrLine: {'line': b'    Building C object CMakeFiles/cmTC_66bf6.dir/testCCompiler.c.o\n'}
+[1.987360] (rover_model) StderrLine: {'line': b'    /usr/bin/cc    -o CMakeFiles/cmTC_66bf6.dir/testCCompiler.c.o -c /github/arm/setup/rovertest/build/rover_model/CMakeFiles/CMakeTmp/testCCompiler.c\n'}
+[1.992159] (rover_model) StderrLine: {'line': b'    Cannot create temporary file in /var/tmp/: Read-only file system\n'}
+[1.996123] (rover_model) StderrLine: {'line': b'    gmake[1]: *** [CMakeFiles/cmTC_66bf6.dir/build.make:78: CMakeFiles/cmTC_66bf6.dir/testCCompiler.c.o] Aborted\n'}
+[2.000744] (rover_model) StderrLine: {'line': b"    gmake[1]: Leaving directory '/github/arm/setup/rovertest/build/rover_model/CMakeFiles/CMakeTmp'\n"}
+[2.004449] (rover_model) StderrLine: {'line': b'    gmake: *** [Makefile:127: cmTC_66bf6/fast] Error 2\n'}
+[2.008044] (rover_model) StderrLine: {'line': b'    \n'}
+[2.012939] (rover_model) StderrLine: {'line': b'    \n'}
+[2.015712] (rover_model) StderrLine: {'line': b'\n'}
+[2.020632] (-) TimerEvent: {}
+[2.022682] (rover_model) StderrLine: {'line': b'  \n'}
+[2.026941] (rover_model) StderrLine: {'line': b'\n'}
+[2.029291] (rover_model) StderrLine: {'line': b'  CMake will not be able to correctly generate this project.\n'}
+[2.032092] (rover_model) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.035386] (rover_model) StderrLine: {'line': b'  CMakeLists.txt:2 (project)\n'}
+[2.039284] (rover_model) StderrLine: {'line': b'\n'}
+[2.041965] (rover_model) StderrLine: {'line': b'\x1b[0m\n'}
+[2.044744] (rover_model) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.046759] (rover_model) StdoutLine: {'line': b'See also "/github/arm/setup/rovertest/build/rover_model/CMakeFiles/CMakeOutput.log".\n'}
+[2.048753] (rover_model) StdoutLine: {'line': b'See also "/github/arm/setup/rovertest/build/rover_model/CMakeFiles/CMakeError.log".\n'}
+[2.050823] (rover_model) CommandEnded: {'returncode': 1}
+[2.121410] (-) TimerEvent: {}
+[2.153649] (rover_model) JobEnded: {'identifier': 'rover_model', 'rc': 1}
+[2.166986] (-) EventReactorShutdown: {}

@@ -1,0 +1,4 @@
+[0mCMake Error: The current CMakeCache.txt directory /github/arm/setup/rovertest/build/rover_model/CMakeCache.txt is different than the directory /my_files/rovertest/build/rover_model where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0mCMake Error: The source directory "/my_files/rovertest/src/rover_model" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.[0m
+gmake: *** [Makefile:226: cmake_check_build_system] Error 1
