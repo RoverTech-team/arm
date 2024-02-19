@@ -11,8 +11,8 @@ This is a guide to make the setup process easier for everyone, some may find the
 
 **Possible errors**
 
-- you have to enable hardware assisted virtualization on windows [﻿forums.docker.com/t/hardware-assisted-virtualization-and-data-execution-protection-must-be-enabled-in-the-bios/109073](https://forums.docker.com/t/hardware-assisted-virtualization-and-data-execution-protection-must-be-enabled-in-the-bios/109073) 
-- if you have an older version of operating system you may want to install an older version of docker [﻿docs.docker.com/desktop/release-notes/](https://docs.docker.com/desktop/release-notes/) 
+- you have to enable hardware assisted virtualization on windows [look here](https://forums.docker.com/t/hardware-assisted-virtualization-and-data-execution-protection-must-be-enabled-in-the-bios/109073) 
+- if you have an older version of operating system you may want to install an older version of docker [﻿look here](https://docs.docker.com/desktop/release-notes/) 
 ### Description
 This Docker container is set up for running a robotic simulation environment with the following specifications:
 
@@ -26,7 +26,7 @@ This Docker container is set up for running a robotic simulation environment wit
 
 # Set up(github)
 
-https://desktop.github.com/
+[downlad github desktop](https://desktop.github.com/)
 
 Download github desktop and clone this repository (arm). By doing open in finder/file explorer you will be able to locate the folder GitHub on your computer. Save the absolute path of this folder.
 
