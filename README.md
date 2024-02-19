@@ -51,7 +51,7 @@ At this point you should get as output a bunch of `RUNNING state` lines and you 
 
 
 - note: replace for example the whole string like <absolute_path_to_github> -> /user/doc/github
-- *very important note*: do not remove or replace :/github because it's the path for the folder inside of the virtual machine
+- **very important note**: do not remove or replace :/github because it's the path for the folder inside of the virtual machine
 
 
 
