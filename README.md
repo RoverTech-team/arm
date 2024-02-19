@@ -36,6 +36,8 @@ From github desktop you can open the whole arm repository on vscode.
 
 # Set up(docker)
 
+- **important note**: in docker before executing the following commands you have to set in preferences -> resources -> file sharing the path to the github folder 
+
 MacOS:
 
 ```
