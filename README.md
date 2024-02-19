@@ -190,7 +190,7 @@ Therefore we always want to execute this command from
 ```
 cd github/arm/setup/rovertest
 ```
-**setup**
+**install**
 
 ```
 . install/setup.bash
