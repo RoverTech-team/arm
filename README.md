@@ -26,7 +26,7 @@ This Docker container is set up for running a robotic simulation environment wit
 
 # Set up(github)
 
-[downlad github desktop](https://desktop.github.com/)
+[downlad github desktop here](https://desktop.github.com/)
 
 Download github desktop and clone this repository (arm). By doing open in finder/file explorer you will be able to locate the folder GitHub on your computer. Save the absolute path of this folder.
 
