@@ -173,7 +173,7 @@ It might not start and give "waiting for serviece /spawn_entity" logs and in the
 ```
 gazebo -s libgazebo_ros_init.so -s libgazebo_ros_factory.so myworld.world
 ```
-then by keeping this process going, open another terminal (dont forget the recurring steps(look at the last paragraph of this readme))
+then by keeping this process going, open another terminal (dont forget the recurring instructions(look at the last paragraph of this readme))
 ```
 ros2 launch rover_model gazebo.launch.py
 ```
