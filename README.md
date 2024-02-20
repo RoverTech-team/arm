@@ -36,7 +36,7 @@ Download github desktop and clone this repository (arm). By doing open in finder
 
 From the githb desktop app go to current branch (which is going to be set on main) and click New Branch. Name it with your username. (during development each branch is going to represent a feature) 
 
-From github desktop you can open the whole arm repository on vscode.
+From github desktop you can open the whole arm repository on vscode. (from the top bar: repository -> open in visual studio code)
 
 ---
 
