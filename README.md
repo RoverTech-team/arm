@@ -187,12 +187,12 @@ if it still does not start restarting the whole docker container often helps
 
 
 **note**
-every time we open a new terminal at the moment we have to source ROS 2
+every time we open a new terminal at the moment we have to source ROS 2 for both **UBUNTU** and **HOST MACHINE**
 ```
 . /opt/ros/humble/local_setup.bash 
 ```
 
-**first commads if you are on vnc ubuntu**
+**second commands if you are on vnc UBUNTU**
 ```
 cd ../../
 ```
@@ -200,7 +200,7 @@ cd ../../
 cd github/arm/setup/rovertest
 ```
 
-**first commads if you are on the host machine**
+**second commands if you are on the HOSTMACHINE**
 ```
 bash
 ```
