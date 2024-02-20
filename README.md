@@ -200,7 +200,7 @@ cd ../../
 cd github/arm/setup/rovertest
 ```
 
-**second commands if you are on the HOSTMACHINE**
+**second commands if you are on the HOST MACHINE**
 ```
 bash
 ```
