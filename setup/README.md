@@ -1,4 +1,4 @@
-# Rover Challenge Setup Guide
+# DEPRECATED, LOOK AT THE README INSIDE THE PARENT FOLDER ARM
 
 This guide provides step-by-step instructions for setting up the Rover Challenge environment and working with ROS2 packages.
 
