@@ -28,7 +28,13 @@ This Docker container is set up for running a robotic simulation environment wit
 
 [downlad github desktop here](https://desktop.github.com/)
 
-Download github desktop and clone this repository (arm). By doing open in finder/file explorer you will be able to locate the folder GitHub on your computer. Save the absolute path of this folder.
+Download github desktop and clone this repository (arm). By doing open in finder/file explorer you will be able to locate the folder GitHub on your computer. **Save the absolute path of this folder**. (it's needed in the next steps)
+
+---
+
+# Create your first branch(github)
+
+From the githb desktop app go to current branch (which is going to be set on main) and click New Branch. Name it with your username. (during development each branch is going to represent a feature) 
 
 From github desktop you can open the whole arm repository on vscode.
 
