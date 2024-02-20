@@ -227,7 +227,7 @@ cd github/arm/setup/rovertest
 ```
 colcon build 
 ```
-it's made to build the env, we use it each time we edit the files inside rover_model (same for any other ros package). It updates the files inside of rovertest/build/rover_model. 
+generally used in **HOST MACHINE** where we have our code editor. It's made to build the packages, we use it each time we edit the files inside rover_model (same for any other ros package). It updates the files inside of rovertest/build/rover_model. 
 
 Therefore we always want to execute this command from 
 
