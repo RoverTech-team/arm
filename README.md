@@ -167,7 +167,10 @@ then let's setup the packages with
 ros2 launch rover_model display.launch.py
 ```
 **Start gazebo**
-
+```
+gazebo -s libgazebo_ros_init.so -s libgazebo_ros_factory.so myworld.world
+```
+and in another terminal
 ```
 ros2 launch rover_model gazebo.launch.py
 ```
