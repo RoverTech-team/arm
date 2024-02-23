@@ -189,7 +189,7 @@ if it still does not start restarting the whole docker container often helps
 
 
 
-# Recurring instructions to set up a terminal. When to use colcon and when install 
+# Recurring instructions to set up a terminal and when to use colcon
 
 In a terminal on the HOST MACHINE
 ```
