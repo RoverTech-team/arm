@@ -201,20 +201,16 @@ sudo printf "source /github/arm/setup/rovertest/install/setup.bash\n" >> /home/u
 source /home/ubuntu/.bashrc
 ```
 
-This way there is **no need** to write these two commands all the time we open a terminal
+(This way there is **no need** to write these two commands all the time we open a terminal
 ```
 . /opt/ros/humble/local_setup.bash 
 . install/setup.bash
 ```
+)
 
 
-**note**
-every time we open a new terminal at the moment we have to source ROS 2 for both **UBUNTU** and **HOST MACHINE**
-```
-. /opt/ros/humble/local_setup.bash 
-```
 
-**second commands if you are on vnc UBUNTU**
+**commands if you are on vnc UBUNTU**
 ```
 cd ../../
 ```
@@ -222,7 +218,7 @@ cd ../../
 cd github/arm/setup/rovertest
 ```
 
-**second commands if you are on the HOST MACHINE**
+**commands if you are on the HOST MACHINE**
 ```
 bash
 ```
