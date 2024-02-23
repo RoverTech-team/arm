@@ -201,7 +201,7 @@ sudo printf "source /github/arm/setup/rovertest/install/setup.bash\n" >> /home/u
 source /home/ubuntu/.bashrc
 ```
 
-Now you can open a new terminal in ubuntu or your host machine and there will be no need to do 
+This way there is **no need** to write these two commands all the time we open a terminal
 ```
 . /opt/ros/humble/local_setup.bash 
 . install/setup.bash
