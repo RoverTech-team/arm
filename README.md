@@ -194,7 +194,7 @@ if it still does not start restarting the whole docker container often helps
 
 # instructions to set up a terminal and when to use colcon
 
-In a terminal on the HOST MACHINE, this commands need to be run JUST ONCE (there is no need to re run these even after you restart the whole container) 
+In a terminal on the HOST MACHINE, these commands need to be run JUST ONCE (there is no need to re run these even after you restart the whole container) 
 ```
 echo "source /opt/ros/humble/local_setup.bash" >> ~/.bashrc
 echo "source /github/arm/setup/rovertest/install/setup.bash" >> ~/.bashrc
