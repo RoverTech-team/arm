@@ -189,7 +189,7 @@ if it still does not start restarting the whole docker container often helps
 
 
 
-#instructions to set up a terminal and when to use colcon
+# instructions to set up a terminal and when to use colcon
 
 In a terminal on the HOST MACHINE, this commands need to be run JUST ONCE (there is no need to re run these even after you restart the whole container) 
 ```
@@ -208,7 +208,7 @@ source /home/ubuntu/.bashrc
 ```
 )
 
-###RECURRING COMMANDS
+### RECURRING COMMANDS
 
 **commands if you are on vnc UBUNTU**
 ```
