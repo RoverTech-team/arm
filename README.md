@@ -191,6 +191,22 @@ if it still does not start restarting the whole docker container often helps
 
 # Recurring instructions to set up a terminal. When to use colcon and when install 
 
+In a terminal on the HOST MACHINE
+```
+echo "source /opt/ros/humble/local_setup.bash" >> ~/.bashrc
+echo "source /github/arm/setup/rovertest/install/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
+sudo printf "source /github/arm/setup/rovertest/install/setup.bash\n" >> /home/ubuntu/.bashrc
+source /home/ubuntu/.bashrc
+```
+
+Now you can open a new terminal in ubuntu or your host machine and there will be no need to do 
+```
+. /opt/ros/humble/local_setup.bash 
+. install/setup.bash
+```
+
 
 **note**
 every time we open a new terminal at the moment we have to source ROS 2 for both **UBUNTU** and **HOST MACHINE**
@@ -210,18 +226,6 @@ cd github/arm/setup/rovertest
 ```
 bash
 ```
-```
-cd github/arm/setup/rovertest
-```
-**install**
-
-```
-. install/setup.bash
-```
-this command is used for installing all the packages in our current session of the terminal, therefore we need to execute it **all the times** that we open a **new terminal**, both when we are on the **HOST MACHINE** and when we are on **UBUNTU** using the localhost:6080 page 
-
-we execute it from  
-
 ```
 cd github/arm/setup/rovertest
 ```
