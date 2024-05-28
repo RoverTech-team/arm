@@ -164,14 +164,14 @@ then let's setup the packages with
 **Start rviz**
 
 #### update 
-ros2 launch arduinobot_description display.launch.py
+ros2 launch arm_description display.launch.py
 #### old 
 ```
 ros2 launch rover_model display.launch.py
 ```
 **Start gazebo**
 #### update
-ros2 launch arduinobot_description gazebo.launch.py
+ros2 launch arm_description gazebo.launch.py
 
 #### old 
 ```
