@@ -163,10 +163,17 @@ then let's setup the packages with
 ```
 **Start rviz**
 
+#### update 
+ros2 launch arduinobot_description display.launch.py
+#### old 
 ```
 ros2 launch rover_model display.launch.py
 ```
 **Start gazebo**
+#### update
+ros2 launch arduinobot_description gazebo.launch.py
+
+#### old 
 ```
 gazebo -s libgazebo_ros_init.so -s libgazebo_ros_factory.so myworld.world
 ```
