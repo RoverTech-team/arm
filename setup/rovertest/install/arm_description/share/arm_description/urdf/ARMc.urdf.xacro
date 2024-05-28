@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="RAM.SLDASM" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="material" params="name color">
+    <material name="${name}">
+      <color rgba="${color}" />
+    </material>
+  </xacro:macro>
+
+  <xacro:macro name="link_with_inertial_visual_collision" params="name mass xyz rpy ixx ixy ixz iyy iyz izz mesh color">
+    <link name="${name}">
+      <inertial>
+        <origin xyz="${xyz}" rpy="${rpy}" />
+        <mass value="${mass}" />
+        <inertia ixx="${ixx}" ixy="${ixy}" ixz="${ixz}" iyy="${iyy}" iyz="${iyz}" izz="${izz}" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://arm_description/meshes/${mesh}" />
+        </geometry>
+        <xacro:material name="" color="${color}" />
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://arm_description/meshes/${mesh}" />
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+
+
+  <xacro:link_with_inertial_visual_collision
+    name="base_link"
+    mass="0.27178231395986"
+    xyz="0.185 0.0443946079565858 0.0443946079565859"
+    rpy="0 0 0"
+    ixx="0.000989352192710714"
+    ixy="-1.40267106251707E-09"
+    ixz="1.40267106280563E-09"
+    iyy="0.00111822585709726"
+    iyz="0.000234693504347095"
+    izz="0.00111822585709726"
+    mesh="base_link.STL"
+    color="0.666666666666667 0.698039215686274 0.768627450980392 1" />
+
+  <xacro:link_with_inertial_visual_collision
+    name="Link_1"
+    mass="2.4356"
+    xyz="1.5676E-08 0.0043386 -0.00016243"
+    rpy="0 0 0"
+    ixx="0.0084992"
+    ixy="5.9127E-09"
+    ixz="3.4787E-09"
+    iyy="0.0082654"
+    iyz="-2.295E-06"
+    izz="0.0056805"
+    mesh="Link_1.STL"
+    color="0.89804 0.91765 0.92941 1" />
+
+  <xacro:link_with_inertial_visual_collision
+    name="Link_2"
+    mass="7.7143"
+    xyz="0 -0.25 0.00010256"
+    rpy="0 0 0"
+    ixx="0.049823"
+    ixy="-1.1825E-08"
+    ixz="-4.96E-18"
+    iyy="0.020085"
+    iyz="-1.6469E-17"
+    izz="0.044186"
+    mesh="Link_2.STL"
+    color="0.89804 0.91765 0.92941 1" />
+
+  <xacro:link_with_inertial_visual_collision
+    name="Link_3"
+    mass="3.3043"
+    xyz="-1.8814E-09 0.18582 -0.0035702"
+    rpy="0 0 0"
+    ixx="0.018373"
+    ixy="-2.3931E-09"
+    ixz="1.9549E-09"
+    iyy="0.0048033"
+    iyz="-1.7357E-05"
+    izz="0.017856"
+    mesh="Link_3.STL"
+    color="0.89804 0.91765 0.92941 1" />
+
+  <xacro:link_with_inertial_visual_collision
+    name="Link_4"
+    mass="0.65255"
+    xyz="4.3751E-08 0.0028395 -0.00013136"
+    rpy="0 0 0"
+    ixx="0.0010392"
+    ixy="4.5608E-10"
+    ixz="7.8099E-11"
+    iyy="0.0010084"
+    iyz="-3.8226E-07"
+    izz="0.00057944"
+    mesh="Link_4.STL"
+    color="0.89804 0.91765 0.92941 1" />
+
+  <xacro:link_with_inertial_visual_collision
+    name="Link_5"
+    mass="0.65255"
+    xyz="4.3751E-08 -0.0028395 0.00013136"
+    rpy="0 0 0"
+    ixx="0.0010392"
+    ixy="-4.5608E-10"
+    ixz="-7.8099E-11"
+    iyy="0.0010084"
+    iyz="-3.8226E-07"
+    izz="0.00057944"
+    mesh="Link_5.STL"
+    color="0.89804 0.91765 0.92941 1" />
+
+  <xacro:link_with_inertial_visual_collision
+    name="Effector"
+    mass="0.049664"
+    xyz="5.5511E-17 -6.225E-06 0.031707"
+    rpy="0 0 0"
+    ixx="9.2805E-05"
+    ixy="1.3346E-20"
+    ixz="5.8525E-20"
+    iyy="9.2817E-05"
+    iyz="-9.0295E-09"
+    izz="2.0939E-05"
+    mesh="Effector.STL"
+    color="0.75294 0.75294 0.75294 1" />
+
+  <link name="world"/>
+  
+
+  <joint name="virtual_joint" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0.5 0.5 0.5" rpy="0 0 0"/> <!-- Base raised by 0.1 meters or else it collides with the ground-->
+  </joint>
+
+  <joint name="Joint_1" type="revolute">
+    <origin xyz="0.185 -0.085 -0.085" rpy="3.1416 0 1.5708" />
+    <parent link="base_link" />
+    <child link="Link_1" />
+    <axis xyz="0 0 1" />
+    <limit lower="-12.567" upper="12.567" effort="100" velocity="3.141" />
+  </joint>
+
+  <joint name="Joint_2" type="revolute">
+    <origin xyz="0 0.154 0" rpy="1.5708 0 0" />
+    <parent link="Link_1" />
+    <child link="Link_2" />
+    <axis xyz="0 0 1" />
+    <limit lower="-12.567" upper="12.567" effort="100" velocity="3.141" />
+  </joint>
+
+  <joint name="Joint_3" type="revolute">
+    <origin xyz="0 -0.5 0.15" rpy="0 0 3.1416" />
+    <parent link="Link_2" />
+    <child link="Link_3" />
+    <axis xyz="0 0 1" />
+    <limit lower="-12.567" upper="12.567" effort="100" velocity="3.141" />
+  </joint>
+
+  <joint name="Joint_4" type="revolute">
+    <origin xyz="0 0.5 -0.104" rpy="1.5708 0 0" />
+    <parent link="Link_3" />
+    <child link="Link_4" />
+    <axis xyz="0 1 0" />
+    <limit lower="-12.567" upper="12.567" effort="10" velocity="3.141" />
+  </joint>
+
+  <joint name="Joint_5" type="revolute">
+    <origin xyz="0 0 -0.104" rpy="-1.5708 0 -1.5708" />
+    <parent link="Link_4" />
+    <child link="Link_5" />
+    <axis xyz="0 1 0" />
+    <limit lower="-12.567" upper="12.567" effort="10" velocity="3.141" />
+  </joint>
+
+  <joint name="Joint_6" type="revolute">
+    <origin xyz="0 0 0.06" rpy="0 0 0" />
+    <parent link="Link_5" />
+    <child link="Effector" />
+    <axis xyz="0 0 1" />
+    <limit lower="-12.567" upper="12.567" effort="10" velocity="3.141" />
+  </joint>
+</robot>

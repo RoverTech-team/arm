@@ -1,5 +1,0 @@
-[31mCMake Error at cmake_install.cmake:46 (file):
-  file INSTALL cannot find "/my_files/rovertest/src/rover_model/config": No
-  such file or directory.
-
-[0m
