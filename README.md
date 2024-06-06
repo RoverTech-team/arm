@@ -161,6 +161,21 @@ then let's setup the packages with
 ```
 . install/setup.bash
 ```
+---
+
+**NEW! START GAZEBO+RVIZ+MOVEIT**
+Launch in 3 different terminals in this order the following commands:
+```
+ros2 launch arm_description gazebo.launch.py
+```
+```
+ros2 launch arm_controller controller.launch.py
+```
+```
+ros2 launch arm_moveit moveit_launch.py
+
+```
+---
 **Start rviz**
 
 #### update 
