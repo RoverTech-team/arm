@@ -1,46 +1,57 @@
 controller_manager:
   ros__parameters:
-    update_rate: 10 # Hz
+    update_rate: 10
 
     arm_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
-    # gripper_controller:
-    #   type: forward_command_controller/ForwardCommandController
 
     gripper_controller:
-      type: joint_trajectory_controller/JointTrajectoryController
+      type: forward_command_controller/ForwardCommandController
+    #gripper_controller:
+      #type: joint_trajectory_controller/JointTrajectoryController
 
+  
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
+
 
 arm_controller:
   ros__parameters:
     joints:
-      - joint_1
-      - joint_2
-      - joint_3
+      - Joint_1
+      - Joint_2
+      - Joint_3
+      - Joint_4
+      - Joint_5
+      - Joint_6
 
     command_interfaces:
       - position
-
     state_interfaces:
       - position
+    
+    #gains:
+      #joint_1: {p: 100.0, i: 0.1, d: 10.0}
+      #joint_2: {p: 100.0, i: 0.1, d: 10.0}
+      #joint_3: {p: 100.0, i: 0.1, d: 10.0}
+      #joint_4: {p: 100.0, i: 0.1, d: 10.0}
+      #joint_5: {p: 100.0, i: 0.1, d: 10.0}
 
     open_loop_control: true
     allow_integration_in_goal_trajectories: true
 
-gripper_controller:
-  ros__parameters:
-    joints:
-      - joint_4
-    interface_name: position
-      
+#gripper_controller:
+  #ros__parameters:
+    #joints:
+    #  - Joint_6
+
+    #interface_name: position
+
     #command_interfaces:
-    #  - position
+    # -position
+    #state_interfaces:
+    # -position
 
-#    state_interfaces:
- #     - position
-
-   # open_loop_control: true
-  #  allow_integration_in_goal_trajectories: true
+    #open_loop_control: true
+    #allow_integration_in_goal_trajectories: true

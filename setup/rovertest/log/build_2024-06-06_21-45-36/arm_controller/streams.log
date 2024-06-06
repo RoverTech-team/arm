@@ -1,0 +1,3 @@
+[0.411s] Invoking command in '/github/arm/setup/rovertest/build/arm_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arm_controller -- -j2 -l2
+[0.545s] gmake: *** [Makefile:145: all] Interrupt
+[0.561s] Invoked command in '/github/arm/setup/rovertest/build/arm_controller' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arm_controller -- -j2 -l2

@@ -1,0 +1,20 @@
+[1.101s] Invoking command in '/github/arm/setup/rovertest/build/arduinobot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arduinobot_controller -- -j2 -l2
+[1.615s] Invoked command in '/github/arm/setup/rovertest/build/arduinobot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arduinobot_controller -- -j2 -l2
+[1.937s] Invoking command in '/github/arm/setup/rovertest/build/arduinobot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arduinobot_controller
+[2.007s] -- Install configuration: ""
+[2.013s] -- Up-to-date: /github/arm/setup/rovertest/install/arduinobot_controller/share/ament_index/resource_index/package_run_dependencies/arduinobot_controller
+[2.017s] -- Up-to-date: /github/arm/setup/rovertest/install/arduinobot_controller/share/ament_index/resource_index/parent_prefix_path/arduinobot_controller
+[2.020s] -- Up-to-date: /github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/environment/ament_prefix_path.sh
+[2.023s] -- Up-to-date: /github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/environment/ament_prefix_path.dsv
+[2.029s] -- Up-to-date: /github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/environment/path.sh
+[2.034s] -- Up-to-date: /github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/environment/path.dsv
+[2.041s] -- Up-to-date: /github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/local_setup.bash
+[2.048s] -- Up-to-date: /github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/local_setup.sh
+[2.054s] -- Up-to-date: /github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/local_setup.zsh
+[2.074s] -- Up-to-date: /github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/local_setup.dsv
+[2.100s] -- Installing: /github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/package.dsv
+[2.189s] -- Up-to-date: /github/arm/setup/rovertest/install/arduinobot_controller/share/ament_index/resource_index/packages/arduinobot_controller
+[2.205s] -- Up-to-date: /github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/cmake/arduinobot_controllerConfig.cmake
+[2.217s] -- Up-to-date: /github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/cmake/arduinobot_controllerConfig-version.cmake
+[2.222s] -- Up-to-date: /github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/package.xml
+[2.304s] Invoked command in '/github/arm/setup/rovertest/build/arduinobot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arduinobot_controller

@@ -1,0 +1,51 @@
+[1.199s] Invoking command in '/github/arm/setup/rovertest/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arm_description -- -j2 -l2
+[1.431s] Invoked command in '/github/arm/setup/rovertest/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arm_description -- -j2 -l2
+[1.595s] Invoking command in '/github/arm/setup/rovertest/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arm_description
+[1.691s] -- Install configuration: ""
+[1.695s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/launch
+[1.702s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/launch/display.launch.py
+[1.717s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/launch/gazebo.launch.py
+[1.723s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/meshes
+[1.736s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/meshes/.DS_Store
+[1.743s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/meshes/Effector.STL
+[1.748s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/meshes/Link_1.STL
+[1.750s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/meshes/Link_2.STL
+[1.753s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/meshes/Link_3.STL
+[1.764s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/meshes/Link_4.STL
+[1.795s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/meshes/Link_5.STL
+[1.799s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/meshes/base_link.STL
+[1.808s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/models
+[1.814s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/models/ground_plane
+[1.822s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/models/ground_plane/model-1_2.sdf
+[1.833s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/models/ground_plane/model-1_3.sdf
+[1.841s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/models/ground_plane/model-1_4.sdf
+[1.848s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/models/ground_plane/model.config
+[1.855s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/models/ground_plane/model.sdf
+[1.859s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/models/sun
+[1.864s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/models/sun/model-1_2.sdf
+[1.874s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/models/sun/model-1_3.sdf
+[1.880s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/models/sun/model-1_4.sdf
+[1.885s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/models/sun/model.config
+[1.887s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/models/sun/model.sdf
+[1.893s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/urdf
+[1.899s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/urdf/ARMc.urdf.xacro
+[1.901s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/urdf/ARMc_gazebo.xacro
+[1.908s] -- Installing: /github/arm/setup/rovertest/install/arm_description/share/arm_description/urdf/ARMc_ros2_control.xacro
+[1.936s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/rviz
+[1.938s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/rviz/display2.rviz
+[1.940s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/ament_index/resource_index/package_run_dependencies/arm_description
+[1.942s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/ament_index/resource_index/parent_prefix_path/arm_description
+[1.943s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/environment/ament_prefix_path.sh
+[1.949s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/environment/ament_prefix_path.dsv
+[1.951s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/environment/path.sh
+[1.954s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/environment/path.dsv
+[1.956s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/local_setup.bash
+[1.958s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/local_setup.sh
+[1.960s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/local_setup.zsh
+[1.962s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/local_setup.dsv
+[1.964s] -- Installing: /github/arm/setup/rovertest/install/arm_description/share/arm_description/package.dsv
+[1.966s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/ament_index/resource_index/packages/arm_description
+[1.968s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/cmake/arm_descriptionConfig.cmake
+[1.975s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/cmake/arm_descriptionConfig-version.cmake
+[1.978s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_description/share/arm_description/package.xml
+[2.080s] Invoked command in '/github/arm/setup/rovertest/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arm_description

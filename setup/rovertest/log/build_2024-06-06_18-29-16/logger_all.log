@@ -1,0 +1,325 @@
+[1.587s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.587s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fed6e903ac0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fed6ef57dc0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fed6ef57dc0>>)
+[1.664s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.666s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.667s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.668s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.669s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.669s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.670s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/github/arm/setup/rovertest'
+[1.671s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.672s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.674s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.676s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.677s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.678s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.679s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.679s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.680s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.701s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.702s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.704s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.705s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.706s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.708s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.709s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.710s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.711s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.713s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.714s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.719s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.720s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.721s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.722s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.723s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.725s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.727s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.727s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.729s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.729s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.730s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.730s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.732s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.733s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.734s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.735s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.736s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.740s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_controller) by extensions ['ignore', 'ignore_ament_install']
+[1.741s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_controller) by extension 'ignore'
+[1.743s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_controller) by extension 'ignore_ament_install'
+[1.745s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_controller) by extensions ['colcon_pkg']
+[1.745s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_controller) by extension 'colcon_pkg'
+[1.747s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_controller) by extensions ['colcon_meta']
+[1.747s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_controller) by extension 'colcon_meta'
+[1.748s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_controller) by extensions ['ros']
+[1.748s] Level 1:colcon.colcon_core.package_identification:_identify(src/arduinobot_controller) by extension 'ros'
+[1.754s] DEBUG:colcon.colcon_core.package_identification:Package 'src/arduinobot_controller' with type 'ros.ament_cmake' and name 'arduinobot_controller'
+[1.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_controller) by extensions ['ignore', 'ignore_ament_install']
+[1.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_controller) by extension 'ignore'
+[1.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_controller) by extension 'ignore_ament_install'
+[1.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_controller) by extensions ['colcon_pkg']
+[1.761s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_controller) by extension 'colcon_pkg'
+[1.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_controller) by extensions ['colcon_meta']
+[1.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_controller) by extension 'colcon_meta'
+[1.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_controller) by extensions ['ros']
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_controller) by extension 'ros'
+[1.769s] DEBUG:colcon.colcon_core.package_identification:Package 'src/arm_controller' with type 'ros.ament_cmake' and name 'arm_controller'
+[1.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_description) by extensions ['ignore', 'ignore_ament_install']
+[1.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_description) by extension 'ignore'
+[1.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_description) by extension 'ignore_ament_install'
+[1.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_description) by extensions ['colcon_pkg']
+[1.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_description) by extension 'colcon_pkg'
+[1.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_description) by extensions ['colcon_meta']
+[1.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_description) by extension 'colcon_meta'
+[1.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_description) by extensions ['ros']
+[1.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_description) by extension 'ros'
+[1.785s] DEBUG:colcon.colcon_core.package_identification:Package 'src/arm_description' with type 'ros.ament_cmake' and name 'arm_description'
+[1.785s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_model) by extensions ['ignore', 'ignore_ament_install']
+[1.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_model) by extension 'ignore'
+[1.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_model) by extension 'ignore_ament_install'
+[1.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_model) by extensions ['colcon_pkg']
+[1.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_model) by extension 'colcon_pkg'
+[1.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_model) by extensions ['colcon_meta']
+[1.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_model) by extension 'colcon_meta'
+[1.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_model) by extensions ['ros']
+[1.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/rover_model) by extension 'ros'
+[1.798s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rover_model' with type 'ros.ament_cmake' and name 'rover_model'
+[1.799s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.799s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.800s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.801s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.801s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.931s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.932s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.018s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /github/arm/setup/rovertest/install
+[2.046s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 373 installed packages in /opt/ros/humble
+[2.051s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.232s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_controller' build argument 'cmake_args' from command line to 'None'
+[2.233s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_controller' build argument 'cmake_target' from command line to 'None'
+[2.233s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.235s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[2.236s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_controller' build argument 'cmake_clean_first' from command line to 'False'
+[2.236s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_controller' build argument 'cmake_force_configure' from command line to 'False'
+[2.237s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_controller' build argument 'ament_cmake_args' from command line to 'None'
+[2.238s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[2.239s] Level 5:colcon.colcon_core.verb:set package 'arduinobot_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.239s] DEBUG:colcon.colcon_core.verb:Building package 'arduinobot_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/github/arm/setup/rovertest/build/arduinobot_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/github/arm/setup/rovertest/install/arduinobot_controller', 'merge_install': False, 'path': '/github/arm/setup/rovertest/src/arduinobot_controller', 'symlink_install': False, 'test_result_base': None}
+[2.264s] Level 5:colcon.colcon_core.verb:set package 'arm_controller' build argument 'cmake_args' from command line to 'None'
+[2.265s] Level 5:colcon.colcon_core.verb:set package 'arm_controller' build argument 'cmake_target' from command line to 'None'
+[2.266s] Level 5:colcon.colcon_core.verb:set package 'arm_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.266s] Level 5:colcon.colcon_core.verb:set package 'arm_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[2.267s] Level 5:colcon.colcon_core.verb:set package 'arm_controller' build argument 'cmake_clean_first' from command line to 'False'
+[2.268s] Level 5:colcon.colcon_core.verb:set package 'arm_controller' build argument 'cmake_force_configure' from command line to 'False'
+[2.268s] Level 5:colcon.colcon_core.verb:set package 'arm_controller' build argument 'ament_cmake_args' from command line to 'None'
+[2.269s] Level 5:colcon.colcon_core.verb:set package 'arm_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[2.270s] Level 5:colcon.colcon_core.verb:set package 'arm_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.270s] DEBUG:colcon.colcon_core.verb:Building package 'arm_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/github/arm/setup/rovertest/build/arm_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/github/arm/setup/rovertest/install/arm_controller', 'merge_install': False, 'path': '/github/arm/setup/rovertest/src/arm_controller', 'symlink_install': False, 'test_result_base': None}
+[2.299s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'cmake_args' from command line to 'None'
+[2.300s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'cmake_target' from command line to 'None'
+[2.301s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.302s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'cmake_clean_cache' from command line to 'False'
+[2.303s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'cmake_clean_first' from command line to 'False'
+[2.303s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'cmake_force_configure' from command line to 'False'
+[2.305s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'ament_cmake_args' from command line to 'None'
+[2.305s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'catkin_cmake_args' from command line to 'None'
+[2.306s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.307s] DEBUG:colcon.colcon_core.verb:Building package 'arm_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/github/arm/setup/rovertest/build/arm_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/github/arm/setup/rovertest/install/arm_description', 'merge_install': False, 'path': '/github/arm/setup/rovertest/src/arm_description', 'symlink_install': False, 'test_result_base': None}
+[2.333s] Level 5:colcon.colcon_core.verb:set package 'rover_model' build argument 'cmake_args' from command line to 'None'
+[2.334s] Level 5:colcon.colcon_core.verb:set package 'rover_model' build argument 'cmake_target' from command line to 'None'
+[2.335s] Level 5:colcon.colcon_core.verb:set package 'rover_model' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.336s] Level 5:colcon.colcon_core.verb:set package 'rover_model' build argument 'cmake_clean_cache' from command line to 'False'
+[2.338s] Level 5:colcon.colcon_core.verb:set package 'rover_model' build argument 'cmake_clean_first' from command line to 'False'
+[2.339s] Level 5:colcon.colcon_core.verb:set package 'rover_model' build argument 'cmake_force_configure' from command line to 'False'
+[2.340s] Level 5:colcon.colcon_core.verb:set package 'rover_model' build argument 'ament_cmake_args' from command line to 'None'
+[2.342s] Level 5:colcon.colcon_core.verb:set package 'rover_model' build argument 'catkin_cmake_args' from command line to 'None'
+[2.342s] Level 5:colcon.colcon_core.verb:set package 'rover_model' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.343s] DEBUG:colcon.colcon_core.verb:Building package 'rover_model' with the following arguments: {'ament_cmake_args': None, 'build_base': '/github/arm/setup/rovertest/build/rover_model', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/github/arm/setup/rovertest/install/rover_model', 'merge_install': False, 'path': '/github/arm/setup/rovertest/src/rover_model', 'symlink_install': False, 'test_result_base': None}
+[2.369s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.397s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.399s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/github/arm/setup/rovertest/src/arduinobot_controller' with build type 'ament_cmake'
+[2.400s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/github/arm/setup/rovertest/src/arduinobot_controller'
+[2.440s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.442s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.443s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.590s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/github/arm/setup/rovertest/src/arm_controller' with build type 'ament_cmake'
+[2.591s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/github/arm/setup/rovertest/src/arm_controller'
+[2.628s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.629s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.844s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/github/arm/setup/rovertest/build/arduinobot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arduinobot_controller -- -j2 -l2
+[2.910s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/github/arm/setup/rovertest/build/arm_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arm_controller -- -j2 -l2
+[3.003s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/github/arm/setup/rovertest/build/arm_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arm_controller -- -j2 -l2
+[3.057s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/github/arm/setup/rovertest/build/arduinobot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arduinobot_controller -- -j2 -l2
+[3.145s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/github/arm/setup/rovertest/build/arm_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arm_controller
+[3.150s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/github/arm/setup/rovertest/build/arduinobot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arduinobot_controller
+[3.197s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arm_controller)
+[3.315s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/github/arm/setup/rovertest/build/arm_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arm_controller
+[3.349s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_controller' for CMake module files
+[3.376s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_controller' for CMake config files
+[3.381s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_controller', 'cmake_prefix_path')
+[3.458s] INFO:colcon.colcon_core.shell:Creating environment hook '/github/arm/setup/rovertest/install/arm_controller/share/arm_controller/hook/cmake_prefix_path.ps1'
+[3.463s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/github/arm/setup/rovertest/install/arm_controller/share/arm_controller/hook/cmake_prefix_path.dsv'
+[3.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/github/arm/setup/rovertest/install/arm_controller/share/arm_controller/hook/cmake_prefix_path.sh'
+[3.476s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_controller/bin'
+[3.477s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_controller/lib/pkgconfig/arm_controller.pc'
+[3.480s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_controller/lib/python3.10/site-packages'
+[3.481s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_controller/bin'
+[3.520s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arm_controller/share/arm_controller/package.ps1'
+[3.530s] INFO:colcon.colcon_core.shell:Creating package descriptor '/github/arm/setup/rovertest/install/arm_controller/share/arm_controller/package.dsv'
+[3.535s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arm_controller/share/arm_controller/package.sh'
+[3.545s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arm_controller/share/arm_controller/package.bash'
+[3.551s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arm_controller/share/arm_controller/package.zsh'
+[3.557s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/github/arm/setup/rovertest/install/arm_controller/share/colcon-core/packages/arm_controller)
+[3.565s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arduinobot_controller)
+[3.572s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/github/arm/setup/rovertest/build/arduinobot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arduinobot_controller
+[3.606s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arduinobot_controller' for CMake module files
+[3.626s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arduinobot_controller' for CMake config files
+[3.630s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduinobot_controller', 'cmake_prefix_path')
+[3.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/hook/cmake_prefix_path.ps1'
+[3.666s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/hook/cmake_prefix_path.dsv'
+[3.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/hook/cmake_prefix_path.sh'
+[3.675s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arduinobot_controller/bin'
+[3.676s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arduinobot_controller/lib/pkgconfig/arduinobot_controller.pc'
+[3.678s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arduinobot_controller/lib/python3.10/site-packages'
+[3.679s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arduinobot_controller/bin'
+[3.706s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/package.ps1'
+[3.711s] INFO:colcon.colcon_core.shell:Creating package descriptor '/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/package.dsv'
+[3.715s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/package.sh'
+[3.718s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/package.bash'
+[3.721s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/package.zsh'
+[3.725s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/github/arm/setup/rovertest/install/arduinobot_controller/share/colcon-core/packages/arduinobot_controller)
+[3.776s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arm_controller)
+[3.818s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_controller' for CMake module files
+[3.844s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_controller' for CMake config files
+[3.847s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_controller', 'cmake_prefix_path')
+[3.876s] INFO:colcon.colcon_core.shell:Creating environment hook '/github/arm/setup/rovertest/install/arm_controller/share/arm_controller/hook/cmake_prefix_path.ps1'
+[3.882s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/github/arm/setup/rovertest/install/arm_controller/share/arm_controller/hook/cmake_prefix_path.dsv'
+[3.888s] INFO:colcon.colcon_core.shell:Creating environment hook '/github/arm/setup/rovertest/install/arm_controller/share/arm_controller/hook/cmake_prefix_path.sh'
+[3.895s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_controller/bin'
+[3.896s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_controller/lib/pkgconfig/arm_controller.pc'
+[3.898s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_controller/lib/python3.10/site-packages'
+[3.900s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_controller/bin'
+[3.924s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arm_controller/share/arm_controller/package.ps1'
+[3.929s] INFO:colcon.colcon_core.shell:Creating package descriptor '/github/arm/setup/rovertest/install/arm_controller/share/arm_controller/package.dsv'
+[3.932s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arm_controller/share/arm_controller/package.sh'
+[3.936s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arm_controller/share/arm_controller/package.bash'
+[3.941s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arm_controller/share/arm_controller/package.zsh'
+[3.946s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/github/arm/setup/rovertest/install/arm_controller/share/colcon-core/packages/arm_controller)
+[3.951s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/github/arm/setup/rovertest/src/arm_description' with build type 'ament_cmake'
+[3.954s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/github/arm/setup/rovertest/src/arm_description'
+[3.978s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.978s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.223s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arduinobot_controller)
+[4.248s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arduinobot_controller' for CMake module files
+[4.264s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arduinobot_controller' for CMake config files
+[4.266s] Level 1:colcon.colcon_core.shell:create_environment_hook('arduinobot_controller', 'cmake_prefix_path')
+[4.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/hook/cmake_prefix_path.ps1'
+[4.295s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/hook/cmake_prefix_path.dsv'
+[4.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/hook/cmake_prefix_path.sh'
+[4.302s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arduinobot_controller/bin'
+[4.303s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arduinobot_controller/lib/pkgconfig/arduinobot_controller.pc'
+[4.305s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arduinobot_controller/lib/python3.10/site-packages'
+[4.306s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arduinobot_controller/bin'
+[4.334s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/package.ps1'
+[4.340s] INFO:colcon.colcon_core.shell:Creating package descriptor '/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/package.dsv'
+[4.344s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/package.sh'
+[4.348s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/package.bash'
+[4.352s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/package.zsh'
+[4.357s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/github/arm/setup/rovertest/install/arduinobot_controller/share/colcon-core/packages/arduinobot_controller)
+[4.369s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/github/arm/setup/rovertest/src/rover_model' with build type 'ament_cmake'
+[4.369s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/github/arm/setup/rovertest/src/rover_model'
+[4.403s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.404s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.617s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/github/arm/setup/rovertest/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arm_description -- -j2 -l2
+[4.664s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/github/arm/setup/rovertest/build/rover_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/rover_model -- -j2 -l2
+[4.795s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/github/arm/setup/rovertest/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arm_description -- -j2 -l2
+[4.810s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/github/arm/setup/rovertest/build/rover_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/rover_model -- -j2 -l2
+[4.893s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/github/arm/setup/rovertest/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arm_description
+[4.908s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/github/arm/setup/rovertest/build/rover_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/rover_model
+[5.083s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rover_model)
+[5.199s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/rover_model' for CMake module files
+[5.233s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/rover_model' for CMake config files
+[5.237s] Level 1:colcon.colcon_core.shell:create_environment_hook('rover_model', 'cmake_prefix_path')
+[5.282s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/github/arm/setup/rovertest/build/rover_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/rover_model
+[5.308s] INFO:colcon.colcon_core.shell:Creating environment hook '/github/arm/setup/rovertest/install/rover_model/share/rover_model/hook/cmake_prefix_path.ps1'
+[5.314s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/github/arm/setup/rovertest/install/rover_model/share/rover_model/hook/cmake_prefix_path.dsv'
+[5.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/github/arm/setup/rovertest/install/rover_model/share/rover_model/hook/cmake_prefix_path.sh'
+[5.328s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/rover_model/bin'
+[5.330s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/rover_model/lib/pkgconfig/rover_model.pc'
+[5.331s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/rover_model/lib/python3.10/site-packages'
+[5.334s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/rover_model/bin'
+[5.369s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/rover_model/share/rover_model/package.ps1'
+[5.373s] INFO:colcon.colcon_core.shell:Creating package descriptor '/github/arm/setup/rovertest/install/rover_model/share/rover_model/package.dsv'
+[5.378s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/rover_model/share/rover_model/package.sh'
+[5.382s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/rover_model/share/rover_model/package.bash'
+[5.387s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/rover_model/share/rover_model/package.zsh'
+[5.397s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/github/arm/setup/rovertest/install/rover_model/share/colcon-core/packages/rover_model)
+[5.406s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arm_description)
+[5.410s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/github/arm/setup/rovertest/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arm_description
+[5.470s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_description' for CMake module files
+[5.489s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_description' for CMake config files
+[5.492s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_description', 'cmake_prefix_path')
+[5.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/github/arm/setup/rovertest/install/arm_description/share/arm_description/hook/cmake_prefix_path.ps1'
+[5.530s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/github/arm/setup/rovertest/install/arm_description/share/arm_description/hook/cmake_prefix_path.dsv'
+[5.535s] INFO:colcon.colcon_core.shell:Creating environment hook '/github/arm/setup/rovertest/install/arm_description/share/arm_description/hook/cmake_prefix_path.sh'
+[5.542s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_description/bin'
+[5.544s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_description/lib/pkgconfig/arm_description.pc'
+[5.546s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_description/lib/python3.10/site-packages'
+[5.548s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_description/bin'
+[5.578s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arm_description/share/arm_description/package.ps1'
+[5.582s] INFO:colcon.colcon_core.shell:Creating package descriptor '/github/arm/setup/rovertest/install/arm_description/share/arm_description/package.dsv'
+[5.587s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arm_description/share/arm_description/package.sh'
+[5.595s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arm_description/share/arm_description/package.bash'
+[5.599s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arm_description/share/arm_description/package.zsh'
+[5.604s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/github/arm/setup/rovertest/install/arm_description/share/colcon-core/packages/arm_description)
+[5.653s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rover_model)
+[5.689s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/rover_model' for CMake module files
+[5.708s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/rover_model' for CMake config files
+[5.712s] Level 1:colcon.colcon_core.shell:create_environment_hook('rover_model', 'cmake_prefix_path')
+[5.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/github/arm/setup/rovertest/install/rover_model/share/rover_model/hook/cmake_prefix_path.ps1'
+[5.742s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/github/arm/setup/rovertest/install/rover_model/share/rover_model/hook/cmake_prefix_path.dsv'
+[5.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/github/arm/setup/rovertest/install/rover_model/share/rover_model/hook/cmake_prefix_path.sh'
+[5.753s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/rover_model/bin'
+[5.755s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/rover_model/lib/pkgconfig/rover_model.pc'
+[5.757s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/rover_model/lib/python3.10/site-packages'
+[5.759s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/rover_model/bin'
+[5.794s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/rover_model/share/rover_model/package.ps1'
+[5.800s] INFO:colcon.colcon_core.shell:Creating package descriptor '/github/arm/setup/rovertest/install/rover_model/share/rover_model/package.dsv'
+[5.810s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/rover_model/share/rover_model/package.sh'
+[5.817s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/rover_model/share/rover_model/package.bash'
+[5.823s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/rover_model/share/rover_model/package.zsh'
+[5.826s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/github/arm/setup/rovertest/install/rover_model/share/colcon-core/packages/rover_model)
+[5.869s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arm_description)
+[5.899s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_description' for CMake module files
+[5.927s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_description' for CMake config files
+[5.932s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_description', 'cmake_prefix_path')
+[5.968s] INFO:colcon.colcon_core.shell:Creating environment hook '/github/arm/setup/rovertest/install/arm_description/share/arm_description/hook/cmake_prefix_path.ps1'
+[5.984s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/github/arm/setup/rovertest/install/arm_description/share/arm_description/hook/cmake_prefix_path.dsv'
+[5.994s] INFO:colcon.colcon_core.shell:Creating environment hook '/github/arm/setup/rovertest/install/arm_description/share/arm_description/hook/cmake_prefix_path.sh'
+[6.001s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_description/bin'
+[6.003s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_description/lib/pkgconfig/arm_description.pc'
+[6.007s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_description/lib/python3.10/site-packages'
+[6.012s] Level 1:colcon.colcon_core.environment:checking '/github/arm/setup/rovertest/install/arm_description/bin'
+[6.080s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arm_description/share/arm_description/package.ps1'
+[6.084s] INFO:colcon.colcon_core.shell:Creating package descriptor '/github/arm/setup/rovertest/install/arm_description/share/arm_description/package.dsv'
+[6.090s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arm_description/share/arm_description/package.sh'
+[6.096s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arm_description/share/arm_description/package.bash'
+[6.100s] INFO:colcon.colcon_core.shell:Creating package script '/github/arm/setup/rovertest/install/arm_description/share/arm_description/package.zsh'
+[6.109s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/github/arm/setup/rovertest/install/arm_description/share/colcon-core/packages/arm_description)
+[6.115s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.118s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.123s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.126s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.214s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.216s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.217s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.415s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.441s] INFO:colcon.colcon_core.shell:Creating prefix script '/github/arm/setup/rovertest/install/local_setup.ps1'
+[6.447s] INFO:colcon.colcon_core.shell:Creating prefix util module '/github/arm/setup/rovertest/install/_local_setup_util_ps1.py'
+[6.452s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/github/arm/setup/rovertest/install/setup.ps1'
+[6.492s] INFO:colcon.colcon_core.shell:Creating prefix script '/github/arm/setup/rovertest/install/local_setup.sh'
+[6.496s] INFO:colcon.colcon_core.shell:Creating prefix util module '/github/arm/setup/rovertest/install/_local_setup_util_sh.py'
+[6.501s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/github/arm/setup/rovertest/install/setup.sh'
+[6.548s] INFO:colcon.colcon_core.shell:Creating prefix script '/github/arm/setup/rovertest/install/local_setup.bash'
+[6.553s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/github/arm/setup/rovertest/install/setup.bash'
+[6.597s] INFO:colcon.colcon_core.shell:Creating prefix script '/github/arm/setup/rovertest/install/local_setup.zsh'
+[6.602s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/github/arm/setup/rovertest/install/setup.zsh'

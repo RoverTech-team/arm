@@ -1,0 +1,15 @@
+/github/arm/setup/rovertest/install/ARMc_controller/share/ament_index/resource_index/package_run_dependencies/armc_controller
+/github/arm/setup/rovertest/install/ARMc_controller/share/ament_index/resource_index/parent_prefix_path/armc_controller
+/github/arm/setup/rovertest/install/ARMc_controller/share/armc_controller/environment/ament_prefix_path.sh
+/github/arm/setup/rovertest/install/ARMc_controller/share/armc_controller/environment/ament_prefix_path.dsv
+/github/arm/setup/rovertest/install/ARMc_controller/share/armc_controller/environment/path.sh
+/github/arm/setup/rovertest/install/ARMc_controller/share/armc_controller/environment/path.dsv
+/github/arm/setup/rovertest/install/ARMc_controller/share/armc_controller/local_setup.bash
+/github/arm/setup/rovertest/install/ARMc_controller/share/armc_controller/local_setup.sh
+/github/arm/setup/rovertest/install/ARMc_controller/share/armc_controller/local_setup.zsh
+/github/arm/setup/rovertest/install/ARMc_controller/share/armc_controller/local_setup.dsv
+/github/arm/setup/rovertest/install/ARMc_controller/share/armc_controller/package.dsv
+/github/arm/setup/rovertest/install/ARMc_controller/share/ament_index/resource_index/packages/armc_controller
+/github/arm/setup/rovertest/install/ARMc_controller/share/armc_controller/cmake/armc_controllerConfig.cmake
+/github/arm/setup/rovertest/install/ARMc_controller/share/armc_controller/cmake/armc_controllerConfig-version.cmake
+/github/arm/setup/rovertest/install/ARMc_controller/share/armc_controller/package.xml

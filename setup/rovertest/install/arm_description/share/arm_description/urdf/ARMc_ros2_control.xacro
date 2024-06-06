@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+
+
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="ARMc">
+
+
+<xacro:property name="PI" value="3.14159"/>
+
+
+<ros2_control name="RobotSystem" type="system">
+<hardware>
+
+<plugin>gazebo_ros2_control/GazeboSystem</plugin>
+
+
+</hardware>
+<joint name="Joint_1">
+<!-- send commands to the motor -->
+    <command_interface name="position">
+<!-- rotation limit-->
+   
+   
+        <param name="min">-${PI/2}</param>
+        <param name="max">${PI/2}</param>
+    </command_interface>
+    
+<!-- read the state of the motor limit-->
+    <state_interface name="position"/>
+</joint>
+
+
+<joint name="Joint_2">
+
+    <command_interface name="position">
+
+   
+    <param name="min">-${PI/2}</param>
+    <param name="max">${PI/2}</param>
+    </command_interface>
+    
+    <state_interface name="position"/>
+</joint>
+
+
+<joint name="Joint_3">
+
+    <command_interface name="position">
+
+  
+    <param name="min">-${PI/2}</param>
+    <param name="max">${PI/2}</param>
+    </command_interface>
+    
+    <state_interface name="position"/>
+</joint>
+
+
+<joint name="Joint_4">
+
+    <command_interface name="position">
+
+
+    <param name="min">-${PI/2}</param>
+    <param name="max">${PI/2}</param>
+    </command_interface>
+    
+    <state_interface name="position"/>
+</joint>
+
+
+<joint name="Joint_5">
+
+    <command_interface name="position">
+
+    <param name="min">-${PI/2}</param>
+    <param name="max">${PI/2}</param>
+    </command_interface>
+    
+    <state_interface name="position"/>
+</joint>
+
+
+
+<joint name="Joint_6">
+
+    <command_interface name="position">
+
+ 
+    <param name="min">-${PI/2}</param>
+    <param name="max">${PI/2}</param>
+    </command_interface>
+    
+    <state_interface name="position"/>
+</joint>
+
+
+
+
+
+
+</ros2_control>
+</robot>

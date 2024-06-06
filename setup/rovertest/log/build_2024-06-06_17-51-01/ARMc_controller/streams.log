@@ -1,0 +1,43 @@
+[0.462s] Invoking command in '/github/arm/setup/rovertest/build/ARMc_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake /github/arm/setup/rovertest/src/ARMc_controller -DCMAKE_INSTALL_PREFIX=/github/arm/setup/rovertest/install/ARMc_controller
+[2.156s] -- The C compiler identification is GNU 11.4.0
+[3.084s] -- The CXX compiler identification is GNU 11.4.0
+[3.180s] -- Detecting C compiler ABI info
+[4.047s] -- Detecting C compiler ABI info - done
+[4.076s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.082s] -- Detecting C compile features
+[4.087s] -- Detecting C compile features - done
+[4.250s] -- Detecting CXX compiler ABI info
+[4.918s] -- Detecting CXX compiler ABI info - done
+[4.956s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.961s] -- Detecting CXX compile features
+[4.969s] -- Detecting CXX compile features - done
+[5.249s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.415s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[7.734s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.870s] WARNING: Package name "ARMc_controller" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[8.673s] -- Added test 'lint_cmake' to check CMake code style
+[8.744s] -- Added test 'xmllint' to check XML markup files
+[8.924s] -- Configuring done
+[9.166s] -- Generating done
+[9.256s] -- Build files have been written to: /github/arm/setup/rovertest/build/ARMc_controller
+[9.266s] Invoked command in '/github/arm/setup/rovertest/build/ARMc_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake /github/arm/setup/rovertest/src/ARMc_controller -DCMAKE_INSTALL_PREFIX=/github/arm/setup/rovertest/install/ARMc_controller
+[9.272s] Invoking command in '/github/arm/setup/rovertest/build/ARMc_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/ARMc_controller -- -j2 -l2
+[9.393s] Invoked command in '/github/arm/setup/rovertest/build/ARMc_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/ARMc_controller -- -j2 -l2
+[9.466s] Invoking command in '/github/arm/setup/rovertest/build/ARMc_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/ARMc_controller
+[9.485s] -- Install configuration: ""
+[9.515s] -- Installing: /github/arm/setup/rovertest/install/ARMc_controller/share/ament_index/resource_index/package_run_dependencies/ARMc_controller
+[9.551s] -- Installing: /github/arm/setup/rovertest/install/ARMc_controller/share/ament_index/resource_index/parent_prefix_path/ARMc_controller
+[9.571s] -- Installing: /github/arm/setup/rovertest/install/ARMc_controller/share/ARMc_controller/environment/ament_prefix_path.sh
+[9.596s] -- Installing: /github/arm/setup/rovertest/install/ARMc_controller/share/ARMc_controller/environment/ament_prefix_path.dsv
+[9.623s] -- Installing: /github/arm/setup/rovertest/install/ARMc_controller/share/ARMc_controller/environment/path.sh
+[9.646s] -- Installing: /github/arm/setup/rovertest/install/ARMc_controller/share/ARMc_controller/environment/path.dsv
+[9.688s] -- Installing: /github/arm/setup/rovertest/install/ARMc_controller/share/ARMc_controller/local_setup.bash
+[9.734s] -- Installing: /github/arm/setup/rovertest/install/ARMc_controller/share/ARMc_controller/local_setup.sh
+[9.788s] -- Installing: /github/arm/setup/rovertest/install/ARMc_controller/share/ARMc_controller/local_setup.zsh
+[9.852s] -- Installing: /github/arm/setup/rovertest/install/ARMc_controller/share/ARMc_controller/local_setup.dsv
+[9.873s] -- Installing: /github/arm/setup/rovertest/install/ARMc_controller/share/ARMc_controller/package.dsv
+[9.912s] -- Installing: /github/arm/setup/rovertest/install/ARMc_controller/share/ament_index/resource_index/packages/ARMc_controller
+[9.944s] -- Installing: /github/arm/setup/rovertest/install/ARMc_controller/share/ARMc_controller/cmake/ARMc_controllerConfig.cmake
+[9.967s] -- Installing: /github/arm/setup/rovertest/install/ARMc_controller/share/ARMc_controller/cmake/ARMc_controllerConfig-version.cmake
+[10.001s] -- Installing: /github/arm/setup/rovertest/install/ARMc_controller/share/ARMc_controller/package.xml
+[10.025s] Invoked command in '/github/arm/setup/rovertest/build/ARMc_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/ARMc_controller

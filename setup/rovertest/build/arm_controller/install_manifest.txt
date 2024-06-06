@@ -1,4 +1,5 @@
 /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/config/arm_controllers.yaml
+/github/arm/setup/rovertest/install/arm_controller/share/arm_controller/launch/controller.launch.py
 /github/arm/setup/rovertest/install/arm_controller/share/ament_index/resource_index/package_run_dependencies/arm_controller
 /github/arm/setup/rovertest/install/arm_controller/share/ament_index/resource_index/parent_prefix_path/arm_controller
 /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/environment/ament_prefix_path.sh

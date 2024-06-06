@@ -1,0 +1,24 @@
+[0.680s] Invoking command in '/github/arm/setup/rovertest/build/arm_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arm_controller -- -j2 -l2
+[0.879s] Invoked command in '/github/arm/setup/rovertest/build/arm_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arm_controller -- -j2 -l2
+[1.350s] Invoking command in '/github/arm/setup/rovertest/build/arm_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arm_controller
+[1.392s] -- Install configuration: ""
+[1.423s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/config
+[1.430s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/config/arm_controllers.yaml
+[1.435s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/launch
+[1.440s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/launch/controller.launch.py
+[1.452s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/ament_index/resource_index/package_run_dependencies/arm_controller
+[1.462s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/ament_index/resource_index/parent_prefix_path/arm_controller
+[1.464s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/environment/ament_prefix_path.sh
+[1.468s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/environment/ament_prefix_path.dsv
+[1.472s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/environment/path.sh
+[1.480s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/environment/path.dsv
+[1.483s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/local_setup.bash
+[1.487s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/local_setup.sh
+[1.503s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/local_setup.zsh
+[1.508s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/local_setup.dsv
+[1.521s] -- Installing: /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/package.dsv
+[1.533s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/ament_index/resource_index/packages/arm_controller
+[1.543s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/cmake/arm_controllerConfig.cmake
+[1.548s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/cmake/arm_controllerConfig-version.cmake
+[1.561s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_controller/share/arm_controller/package.xml
+[1.571s] Invoked command in '/github/arm/setup/rovertest/build/arm_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arm_controller

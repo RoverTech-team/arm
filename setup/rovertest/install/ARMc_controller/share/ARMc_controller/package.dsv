@@ -1,0 +1,8 @@
+source;share/armc_controller/hook/cmake_prefix_path.ps1
+source;share/armc_controller/hook/cmake_prefix_path.dsv
+source;share/armc_controller/hook/cmake_prefix_path.sh
+source;share/armc_controller/local_setup.bash
+source;share/armc_controller/local_setup.dsv
+source;share/armc_controller/local_setup.ps1
+source;share/armc_controller/local_setup.sh
+source;share/armc_controller/local_setup.zsh

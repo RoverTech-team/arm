@@ -1,0 +1,30 @@
+[0.491s] Invoking command in '/github/arm/setup/rovertest/build/arm_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arm_moveit -- -j2 -l2
+[0.722s] Invoked command in '/github/arm/setup/rovertest/build/arm_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arm_moveit -- -j2 -l2
+[1.436s] Invoking command in '/github/arm/setup/rovertest/build/arm_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arm_moveit
+[1.470s] -- Install configuration: ""
+[1.472s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/launch
+[1.474s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/launch/moveit_launch.py
+[1.477s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/config
+[1.484s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/config/arm.srdf
+[1.487s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/config/initial_positions.yaml
+[1.493s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/config/joint_limits.yaml
+[1.497s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/config/kinematics.yaml
+[1.517s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/config/moveit.rviz
+[1.547s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/config/moveit_controllers.yaml
+[1.550s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/config/pilz_cartesian_limits.yaml
+[1.577s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/ament_index/resource_index/package_run_dependencies/arm_moveit
+[1.595s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/ament_index/resource_index/parent_prefix_path/arm_moveit
+[1.600s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/environment/ament_prefix_path.sh
+[1.603s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/environment/ament_prefix_path.dsv
+[1.606s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/environment/path.sh
+[1.613s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/environment/path.dsv
+[1.617s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/local_setup.bash
+[1.626s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/local_setup.sh
+[1.633s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/local_setup.zsh
+[1.637s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/local_setup.dsv
+[1.641s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/package.dsv
+[1.648s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/ament_index/resource_index/packages/arm_moveit
+[1.656s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/cmake/arm_moveitConfig.cmake
+[1.661s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/cmake/arm_moveitConfig-version.cmake
+[1.665s] -- Up-to-date: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/package.xml
+[1.670s] Invoked command in '/github/arm/setup/rovertest/build/arm_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/github/arm/setup/rovertest/install/rover_py:/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arm_moveit

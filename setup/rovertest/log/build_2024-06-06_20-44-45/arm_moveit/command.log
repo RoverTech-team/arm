@@ -1,0 +1,6 @@
+Invoking command in '/github/arm/setup/rovertest/build/arm_moveit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /github/arm/setup/rovertest/src/arm_moveit -DCMAKE_INSTALL_PREFIX=/github/arm/setup/rovertest/install/arm_moveit
+Invoked command in '/github/arm/setup/rovertest/build/arm_moveit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /github/arm/setup/rovertest/src/arm_moveit -DCMAKE_INSTALL_PREFIX=/github/arm/setup/rovertest/install/arm_moveit
+Invoking command in '/github/arm/setup/rovertest/build/arm_moveit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arm_moveit -- -j2 -l2
+Invoked command in '/github/arm/setup/rovertest/build/arm_moveit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arm_moveit -- -j2 -l2
+Invoking command in '/github/arm/setup/rovertest/build/arm_moveit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arm_moveit
+Invoked command in '/github/arm/setup/rovertest/build/arm_moveit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arm_moveit

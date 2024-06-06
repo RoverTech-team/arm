@@ -1,0 +1,42 @@
+[0.296s] Invoking command in '/github/arm/setup/rovertest/build/arm_moveit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /github/arm/setup/rovertest/src/arm_moveit -DCMAKE_INSTALL_PREFIX=/github/arm/setup/rovertest/install/arm_moveit
+[1.228s] -- The C compiler identification is GNU 11.4.0
+[1.959s] -- The CXX compiler identification is GNU 11.4.0
+[2.004s] -- Detecting C compiler ABI info
+[2.953s] -- Detecting C compiler ABI info - done
+[2.956s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.958s] -- Detecting C compile features
+[2.963s] -- Detecting C compile features - done
+[3.007s] -- Detecting CXX compiler ABI info
+[3.705s] -- Detecting CXX compiler ABI info - done
+[3.758s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.779s] -- Detecting CXX compile features
+[3.785s] -- Detecting CXX compile features - done
+[3.797s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.189s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[4.427s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.782s] -- Added test 'lint_cmake' to check CMake code style
+[4.794s] -- Added test 'xmllint' to check XML markup files
+[4.879s] -- Configuring done
+[5.133s] -- Generating done
+[5.212s] -- Build files have been written to: /github/arm/setup/rovertest/build/arm_moveit
+[5.228s] Invoked command in '/github/arm/setup/rovertest/build/arm_moveit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /github/arm/setup/rovertest/src/arm_moveit -DCMAKE_INSTALL_PREFIX=/github/arm/setup/rovertest/install/arm_moveit
+[5.238s] Invoking command in '/github/arm/setup/rovertest/build/arm_moveit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arm_moveit -- -j2 -l2
+[5.340s] Invoked command in '/github/arm/setup/rovertest/build/arm_moveit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /github/arm/setup/rovertest/build/arm_moveit -- -j2 -l2
+[5.529s] Invoking command in '/github/arm/setup/rovertest/build/arm_moveit': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arm_moveit
+[5.556s] -- Install configuration: ""
+[5.571s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/ament_index/resource_index/package_run_dependencies/arm_moveit
+[5.593s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/ament_index/resource_index/parent_prefix_path/arm_moveit
+[5.624s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/environment/ament_prefix_path.sh
+[5.646s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/environment/ament_prefix_path.dsv
+[5.669s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/environment/path.sh
+[5.689s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/environment/path.dsv
+[5.714s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/local_setup.bash
+[5.732s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/local_setup.sh
+[5.749s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/local_setup.zsh
+[5.762s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/local_setup.dsv
+[5.787s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/package.dsv
+[5.814s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/ament_index/resource_index/packages/arm_moveit
+[5.844s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/cmake/arm_moveitConfig.cmake
+[5.866s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/cmake/arm_moveitConfig-version.cmake
+[5.887s] -- Installing: /github/arm/setup/rovertest/install/arm_moveit/share/arm_moveit/package.xml
+[5.914s] Invoked command in '/github/arm/setup/rovertest/build/arm_moveit' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /github/arm/setup/rovertest/build/arm_moveit

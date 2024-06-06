@@ -1,0 +1,9 @@
+/github/arm/setup/rovertest/build/arduinobot_controller/CMakeFiles/uninstall.dir
+/github/arm/setup/rovertest/build/arduinobot_controller/CMakeFiles/arduinobot_controller_uninstall.dir
+/github/arm/setup/rovertest/build/arduinobot_controller/CMakeFiles/test.dir
+/github/arm/setup/rovertest/build/arduinobot_controller/CMakeFiles/edit_cache.dir
+/github/arm/setup/rovertest/build/arduinobot_controller/CMakeFiles/rebuild_cache.dir
+/github/arm/setup/rovertest/build/arduinobot_controller/CMakeFiles/list_install_components.dir
+/github/arm/setup/rovertest/build/arduinobot_controller/CMakeFiles/install.dir
+/github/arm/setup/rovertest/build/arduinobot_controller/CMakeFiles/install/local.dir
+/github/arm/setup/rovertest/build/arduinobot_controller/CMakeFiles/install/strip.dir

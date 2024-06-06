@@ -1,0 +1,15 @@
+/github/arm/setup/rovertest/install/arduinobot_controller/share/ament_index/resource_index/package_run_dependencies/arduinobot_controller
+/github/arm/setup/rovertest/install/arduinobot_controller/share/ament_index/resource_index/parent_prefix_path/arduinobot_controller
+/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/environment/ament_prefix_path.sh
+/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/environment/ament_prefix_path.dsv
+/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/environment/path.sh
+/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/environment/path.dsv
+/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/local_setup.bash
+/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/local_setup.sh
+/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/local_setup.zsh
+/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/local_setup.dsv
+/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/package.dsv
+/github/arm/setup/rovertest/install/arduinobot_controller/share/ament_index/resource_index/packages/arduinobot_controller
+/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/cmake/arduinobot_controllerConfig.cmake
+/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/cmake/arduinobot_controllerConfig-version.cmake
+/github/arm/setup/rovertest/install/arduinobot_controller/share/arduinobot_controller/package.xml

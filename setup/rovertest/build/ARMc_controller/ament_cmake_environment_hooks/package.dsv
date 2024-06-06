@@ -1,0 +1,4 @@
+source;share/armc_controller/local_setup.bash
+source;share/armc_controller/local_setup.dsv
+source;share/armc_controller/local_setup.sh
+source;share/armc_controller/local_setup.zsh

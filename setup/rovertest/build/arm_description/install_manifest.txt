@@ -19,6 +19,8 @@
 /github/arm/setup/rovertest/install/arm_description/share/arm_description/models/sun/model.config
 /github/arm/setup/rovertest/install/arm_description/share/arm_description/models/sun/model.sdf
 /github/arm/setup/rovertest/install/arm_description/share/arm_description/urdf/ARMc.urdf.xacro
+/github/arm/setup/rovertest/install/arm_description/share/arm_description/urdf/ARMc_gazebo.xacro
+/github/arm/setup/rovertest/install/arm_description/share/arm_description/urdf/ARMc_ros2_control.xacro
 /github/arm/setup/rovertest/install/arm_description/share/arm_description/rviz/display2.rviz
 /github/arm/setup/rovertest/install/arm_description/share/ament_index/resource_index/package_run_dependencies/arm_description
 /github/arm/setup/rovertest/install/arm_description/share/ament_index/resource_index/parent_prefix_path/arm_description

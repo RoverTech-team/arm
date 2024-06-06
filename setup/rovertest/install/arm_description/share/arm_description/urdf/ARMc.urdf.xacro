@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<robot name="RAM.SLDASM" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="ARMc" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+
+  <xacro:include filename="$(find arm_description)/urdf/ARMc_gazebo.xacro"/>
+<!-- Include ros2_control Plugins -->
+    <xacro:include filename="$(find arm_description)/urdf/ARMc_ros2_control.xacro" />
+    
+
+
+
   <xacro:macro name="material" params="name color">
     <material name="${name}">
       <color rgba="${color}" />
     </material>
+  </xacro:macro>
+
+
+  <!-- control-->
+  <xacro:macro name="default_transmission" params="number">
+    <transmission name="transmission_${number}">
+      <plugin>transmission_interface/SimpleTransmission</plugin><!-- TODO CHECK INTERFACE AND CHANGE IT IF NEEDED -->
+      <actuator name="motor_${number}" role="actuator1"/>
+      <joint name="Joint_${number}" role="joint1">
+        <mechanical_reduction>1.0</mechanical_reduction>
+      </joint>
+    </transmission>
+
+  
   </xacro:macro>
 
   <xacro:macro name="link_with_inertial_visual_collision" params="name mass xyz rpy ixx ixy ixz iyy iyz izz mesh color">
@@ -184,4 +208,14 @@
     <axis xyz="0 0 1" />
     <limit lower="-12.567" upper="12.567" effort="10" velocity="3.141" />
   </joint>
+
+
+
+  <xacro:default_transmission number="1"/>
+  <xacro:default_transmission number="2"/>
+  <xacro:default_transmission number="3"/>
+  <xacro:default_transmission number="4"/>
+  <xacro:default_transmission number="5"/>
+  <xacro:default_transmission number="6"/>
+
 </robot>
