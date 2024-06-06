@@ -1,5 +1,6 @@
 ![diagram-export-19-2-2024-15_55_34](https://github.com/RoverTech-team/arm/assets/49610092/1f6bd142-8c0c-4def-ab68-5a0c6c00acd4)
 
+![GIF-2024-06-07-01-33-21](https://github.com/RoverTech-team/arm/assets/49610092/82331f8c-edff-4b26-83f8-42186aa5e9a5)
 
 
 # ROS2 development setup
