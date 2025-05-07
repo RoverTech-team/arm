@@ -1,3 +1,0 @@
-[console_scripts]
-simple_publisher = rover_py.simple_publisher:main
-

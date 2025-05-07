@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: rover_model
+    relative_path: urdf/arm.urdf.xacro
+  srdf:
+    relative_path: config/arm.srdf
+  package_settings:
+    author_name: LuisC
+    author_email: luis.caballero@polispace.it
+    generated_timestamp: 1746551168
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
