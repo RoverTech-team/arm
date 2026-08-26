@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="full_rover">
+    <!-- INCLUDE THE ARM URDF -->
+    <xacro:include filename="$(find rover_arm_description)/urdf/rover_arm.urdf.xacro" />
+    <xacro:include filename="$(find rover_body_description)/urdf/rover_body.urdf.xacro" />
+
+    <xacro:property name="body_pos" value="0 0 0" />
+    <xacro:property name="arm_pos" value="-0.16 0.2 0.15" />
+
+
+    <link name="base_link"/>
+    
+    <xacro:rover_body parent="base_link" prefix="body_">
+        <origin xyz="${body_pos}" rpy="0 0 0"/> 
+    </xacro:rover_body>
+
+    <xacro:rover_arm parent="body_frame" prefix="arm_">
+        <origin xyz="${arm_pos}" rpy="0 0 0"/> 
+    </xacro:rover_arm>
+
+</robot>

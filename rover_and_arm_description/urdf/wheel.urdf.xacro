@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- x_pos, y_pos, z_pos: wheel joint position in relation to the parent link -->
+  <!-- mirror: has a value of 0 for the left side, and 1 for the right side -->
+  <xacro:macro name="wheel" params="prefix parent x_pos y_pos z_pos mirror">
+
+    <joint name="${prefix}_wheel_joint" type="continuous">
+      <parent link="${parent}"/>
+      <child link="${prefix}_wheel_link"/>
+      <origin xyz="${x_pos} ${y_pos} ${z_pos}" rpy="0 0 0"/>
+      <axis xyz="1 0 0"/>
+    </joint>
+
+    <link name="${prefix}_wheel_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="${pi / 2} 0 ${mirror * pi}"/>
+        <geometry>
+          <mesh filename="package://rover_body_description/meshes/visual/wheel.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="black">
+          <color rgba="0.3 0.3 0.3 1.0"/>
+        </material>
+      </visual>
+
+      <collision>
+        <origin xyz="${(mirror * 0.17) - 0.17 / 2} 0 0" rpy="${pi / 2} 0 ${pi / 2}"/>
+        <geometry>
+          <cylinder radius="0.125" length="0.17"/>
+        </geometry>
+      </collision>
+    </link>
+
+  </xacro:macro>
+</robot>

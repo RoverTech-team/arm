@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rover_arm">
+
+  <xacro:macro name="rover_arm" params="parent prefix *origin">
+
+
+
+
+  <!--
+ __      __     _____  _____          ____  _      ______  _____ 
+ \ \    / /\   |  __ \|_   _|   /\   |  _ \| |    |  ____|/ ____|
+  \ \  / /  \  | |__) | | |    /  \  | |_) | |    | |__  | (___  
+   \ \/ / /\ \ |  _  /  | |   / /\ \ |  _ <| |    |  __|  \___ \ 
+    \  / ____ \| | \ \ _| |_ / ____ \| |_) | |____| |____ ____) |
+     \/_/    \_\_|  \_\_____/_/    \_\____/|______|______|_____/                             
+  -->
+
+  <!-- LINK OFFSETS -->
+  <xacro:property name="base_rotation_offset" value="${pi / 2} 0 0" />
+  <xacro:property name="j1_rotation_offset" value="${pi / 2} 0 0" />
+  <xacro:property name="j2_rotation_offset" value="${pi / 6} 0 0" />
+  <xacro:property name="j3_rotation_offset" value="${pi - 0.4366117} 0 0" />
+
+  <!-- JOINT POSITIONS -->
+  <xacro:property name="j1_joint_pos" value="0 0 0.024" />
+  <xacro:property name="j2_joint_pos" value="0.0808 0 0.071" />
+  <xacro:property name="j3_joint_pos" value="0.007 0 0.25" />
+  <xacro:property name="ee_base_joint_pos" value="-0.028 0 0.2715" />
+  <xacro:property name="slider_joint_pos" value="0 0.11 0" />
+  <xacro:property name="finger1_joint_pos" value="-0.052384 0.134522 -0.016965" />
+  <xacro:property name="finger1_joint_rotation" value="0 ${-pi / 6} 0" />
+  <xacro:property name="finger2_joint_pos" value="0.011500 0.134522 0.053848" />
+  <xacro:property name="finger2_joint_rotation" value="0 ${pi / 2} 0" />
+  <xacro:property name="finger3_joint_pos" value="0.040884 0.134522 -0.036883" />
+  <xacro:property name="finger3_joint_rotation" value="0 ${pi * 7 / 6} 0" />
+
+  <!-- COLORS -->
+  <!-- links color -->
+  <material name="${prefix}links_color">
+    <color rgba="0.9 0.5 0.0 1.0"/>
+  </material>
+
+  <!-- SLIDER TO FINGER CINEMATIC RELATION -->
+  <xacro:property name="slider_length" value="0.05" />
+  <xacro:property name="finger_rotation_upper_bound" value="${pi / 2}" />
+  <!-- the formula used to calculate the multiplier is given by the total rotation distance divided by the total sliding distance -->
+  <xacro:property name="relation_multip" value="${finger_rotation_upper_bound / slider_length}" />
+
+
+
+
+  <!-- 
+   _      _____ _   _ _  __ _____ 
+  | |    |_   _| \ | | |/ // ____|
+  | |      | | |  \| | ' /| (___  
+  | |      | | | . ` |  <  \___ \ 
+  | |____ _| |_| |\  | . \ ____) |
+  |______|_____|_| \_|_|\_\_____/                                   
+  -->
+
+  <!-- BASE LINK -->
+  <link name="${prefix}base">
+    <visual>
+      <origin xyz="0 0 0" rpy="${base_rotation_offset}"/>
+      <geometry>
+        <mesh filename="package://rover_arm_description/meshes/visual/base.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="${prefix}links_color"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0.015 -0.022" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.153000 0.202000 0.122040"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- J1 -->
+  <link name="${prefix}j1">
+    <visual>
+      <origin xyz="0 0 0" rpy="${j1_rotation_offset}"/>
+      <geometry>
+        <mesh filename="package://rover_arm_description/meshes/visual/j1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="${prefix}links_color"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.035 0 0.065" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.23 0.07 0.08"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- J2 -->
+  <link name="${prefix}j2">
+    <visual>
+      <origin xyz="0 0 0" rpy="${j2_rotation_offset}"/>
+      <geometry>
+        <mesh filename="package://rover_arm_description/meshes/visual/j2.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="${prefix}links_color"/>
+    </visual>
+    <collision>
+      <origin xyz="${0.05 / 2} 0 ${0.25 / 2}" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 0.32"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="${0.05 + 0.05 / 2} 0 0.185" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 0.17"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- J3 -->
+  <link name="${prefix}j3">
+    <visual>
+      <origin xyz="0 0 0" rpy="${j3_rotation_offset}"/>
+      <geometry>
+        <mesh filename="package://rover_arm_description/meshes/visual/j3.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="${prefix}links_color"/>
+    </visual>
+    <collision>
+      <origin xyz="${-0.05 / 2} 0 0.04" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.05 0.07 0.15"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="${-0.05 / 2} 0 0.2" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.13 0.07 0.2"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="${-(0.05 + 0.13 + 0.04) / 2} 0 0.195" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.04 0.07 0.13"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- END EFFECTOR BASE -->
+  <link name="${prefix}ee_base">
+    <visual>
+      <origin xyz="0 0.018007 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://rover_arm_description/meshes/visual/end_effector_base.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="${prefix}links_color"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0.07 0" rpy="${pi / 2} 0 0"/>
+      <geometry>
+        <cylinder radius="0.06" length="0.12"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- END EFFECTOR SLIDER -->
+  <link name="${prefix}ee_slider">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://rover_arm_description/meshes/visual/end_effector_slider.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="${prefix}links_color"/>
+    </visual>
+  </link>
+
+  <!-- END EFFECTOR FINGERS -->
+  <!-- finger 1 -->
+  <link name="${prefix}ee_finger1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://rover_arm_description/meshes/visual/end_effector_finger.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="${prefix}links_color"/>
+    </visual>
+    <collision>
+      <origin xyz="0.016 ${0.14 / 2} ${- 0.022 / 2}" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.042 0.14 0.022"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- finger 2 -->
+  <link name="${prefix}ee_finger2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://rover_arm_description/meshes/visual/end_effector_finger.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="${prefix}links_color"/>
+    </visual>
+    <collision>
+      <origin xyz="0.016 ${0.14 / 2} ${- 0.022 / 2}" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.042 0.14 0.022"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- finger 3 -->
+  <link name="${prefix}ee_finger3">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://rover_arm_description/meshes/visual/end_effector_finger.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="${prefix}links_color"/>
+    </visual>
+    <collision>
+      <origin xyz="0.016 ${0.14 / 2} ${- 0.022 / 2}" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.042 0.14 0.022"/>
+      </geometry>
+    </collision>
+  </link>
+
+
+
+
+  <!-- 
+       _  ____ _____ _   _ _______ _____ 
+      | |/ __ \_   _| \ | |__   __/ ____|
+      | | |  | || | |  \| |  | | | (___  
+  _   | | |  | || | | . ` |  | |  \___ \ 
+ | |__| | |__| || |_| |\  |  | |  ____) |
+  \____/ \____/_____|_| \_|  |_| |_____/                                      
+  -->
+
+  <joint name="${prefix}mount_joint" type="fixed">
+    <parent link="${parent}"/>
+    <child link="${prefix}base"/>
+    <xacro:insert_block name="origin"/>
+  </joint>
+
+  <!-- CONNECT J1 TO THE BASE -->
+  <joint name="${prefix}j1_joint" type="continuous">
+    <parent link="${prefix}base"/>
+    <child link="${prefix}j1"/>
+    <origin xyz="${j1_joint_pos}" rpy="0 0 0"/>
+    <!-- Rotation Axis -->
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <!-- CONNECT J2 TO J1 -->
+  <joint name="${prefix}j2_joint" type="revolute">
+    <parent link="${prefix}j1"/>
+    <child link="${prefix}j2"/>
+    <origin xyz="${j2_joint_pos}" rpy="0 0 0"/>
+    <!-- Rotation Axis -->
+    <axis xyz="1 0 0"/>
+    <!-- Limits -->
+    <limit lower="${-pi / 2}" upper="${pi / 2}" effort="50.0" velocity="1.0"/>
+  </joint>
+
+  <!-- CONNECT J3 TO J2 -->
+  <joint name="${prefix}j3_joint" type="revolute">
+    <parent link="${prefix}j2"/>
+    <child link="${prefix}j3"/>
+    <!-- Positioning and origin of j4 based from j3 -->
+    <origin xyz="${j3_joint_pos}" rpy="0 0 0"/>
+    <!-- Rotation Axis -->
+    <axis xyz="1 0 0"/>
+    <!-- Limits -->
+    <limit lower="${-pi / 2}" upper="${pi / 2}" effort="50.0" velocity="1.0"/>
+  </joint>
+
+  <!-- CONNECT THE END EFFECTOR BASE TO J3 -->
+  <link name="${prefix}ee_base_dummy"/> <!-- needed since urdf does not allow child with multiple parents, so this is a dummy-parent -->
+  <joint name="${prefix}ee_base_joint_x" type="revolute">
+    <parent link="${prefix}j3"/>
+    <child link="${prefix}ee_base_dummy"/>
+    <origin xyz="${ee_base_joint_pos}" rpy="0 0 0"/>
+    <!-- Rotation Axis -->
+    <axis xyz="1 0 0"/>
+    <!-- Limits -->
+    <limit lower="${pi}" upper="0" effort="50.0" velocity="1.0"/>
+  </joint>
+  <joint name="${prefix}ee_base_joint_y" type="continuous">
+    <parent link="${prefix}ee_base_dummy"/>
+    <child link="${prefix}ee_base"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <!-- Rotation Axis -->
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <!-- CONNECT THE SLIDER TO THE END EFFECTOR BASE -->
+  <joint name="${prefix}slider_joint" type="prismatic">
+    <parent link="${prefix}ee_base"/>
+    <child link="${prefix}ee_slider"/>
+    <origin xyz="${slider_joint_pos}" rpy="0 0 0"/>
+    <!-- Sliding Axis -->
+    <axis xyz="0 1 0"/>
+    <!-- Limits -->
+    <limit lower="0.0" upper="${slider_length}" effort="50.0" velocity="1.0"/>
+  </joint>
+
+  <!-- CONNECT THE FINGERS TO THE END EFFECTOR BASE -->
+  <!-- finger 1 joint-->
+  <joint name="${prefix}finger1_joint" type="revolute">
+    <parent link="${prefix}ee_base"/>
+    <child link="${prefix}ee_finger1"/>
+    <origin xyz="${finger1_joint_pos}" rpy="${finger1_joint_rotation}"/>
+    <!-- Sliding Axis -->
+    <axis xyz="0 0 1"/>
+    <!-- Limits -->
+    <limit lower="0.0" upper="${finger_rotation_upper_bound}" effort="50.0" velocity="1.0"/>
+    <mimic joint="${prefix}slider_joint" multiplier="${relation_multip}" offset="0.0"/>
+  </joint>
+
+  <!-- finger 2 joint-->
+  <joint name="${prefix}finger2_joint" type="revolute">
+    <parent link="${prefix}ee_base"/>
+    <child link="${prefix}ee_finger2"/>
+    <origin xyz="${finger2_joint_pos}" rpy="${finger2_joint_rotation}"/>
+    <!-- Sliding Axis -->
+    <axis xyz="0 0 1"/>
+    <!-- Limits -->
+    <limit lower="0.0" upper="${finger_rotation_upper_bound}" effort="50.0" velocity="1.0"/>
+    <mimic joint="${prefix}slider_joint" multiplier="${relation_multip}" offset="0.0"/>
+  </joint>
+
+  <!-- finger 3 joint-->
+  <joint name="${prefix}finger3_joint" type="revolute">
+    <parent link="${prefix}ee_base"/>
+    <child link="${prefix}ee_finger3"/>
+    <origin xyz="${finger3_joint_pos}" rpy="${finger3_joint_rotation}"/>
+    <!-- Sliding Axis -->
+    <axis xyz="0 0 1"/>
+    <!-- Limits -->
+    <limit lower="0.0" upper="${finger_rotation_upper_bound}" effort="50.0" velocity="1.0"/>
+    <mimic joint="${prefix}slider_joint" multiplier="${relation_multip}" offset="0.0"/>
+  </joint>
+
+  </xacro:macro>
+
+</robot>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="test_rover_body">
+
+  <xacro:include filename="$(find rover_body_description)/urdf/rover_body.urdf.xacro" />
+
+  <link name="base_link"/>
+
+  <xacro:rover_body prefix="body_" parent="base_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:rover_body>
+
+</robot>

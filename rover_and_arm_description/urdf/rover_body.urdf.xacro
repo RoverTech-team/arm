@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="wheel.urdf.xacro" />
+
+  <xacro:macro name="rover_body" params="prefix parent *origin">
+
+
+
+
+  <!--
+ __      __     _____  _____          ____  _      ______  _____ 
+ \ \    / /\   |  __ \|_   _|   /\   |  _ \| |    |  ____|/ ____|
+  \ \  / /  \  | |__) | | |    /  \  | |_) | |    | |__  | (___  
+   \ \/ / /\ \ |  _  /  | |   / /\ \ |  _ <| |    |  __|  \___ \ 
+    \  / ____ \| | \ \ _| |_ / ____ \| |_) | |____| |____ ____) |
+     \/_/    \_\_|  \_\_____/_/    \_\____/|______|______|_____/                             
+  -->
+
+  <!-- LINK OFFSETS -->
+  <xacro:property name="frame_rotation_offset" value="${pi / 2} 0 0" />
+  <xacro:property name="left_suspension_rotation_offset" value="${pi / 2} 0 0" />
+  <xacro:property name="left_sub_suspension_rotation_offset" value="${pi / 2} 0 0" />
+  <xacro:property name="right_suspension_rotation_offset" value="${pi / 2} 0 0" />
+  <xacro:property name="right_sub_suspension_rotation_offset" value="${pi / 2} 0 0" />
+
+  <!-- JOINT POSITIONS -->
+  <xacro:property name="frame_joint_pos" value="0 0 0" />
+  <xacro:property name="left_suspension_joint_pos" value="-0.3516 -0.053959 0" />
+  <xacro:property name="left_sub_suspension_joint_pos" value="0.028 -0.249772 -0.051126" />
+  <xacro:property name="right_suspension_joint_pos" value="0.3516 -0.053959 0" />
+  <xacro:property name="right_sub_suspension_joint_pos" value="-0.028 -0.249772 -0.051126" />
+
+  <!-- Camera dimentions and positions -->
+  <xacro:property name="pole_height" value="0.312"/>
+  <xacro:property name="pole_width" value="0.02"/>
+  <xacro:property name="camera_len" value="0.178"/>
+  <xacro:property name="camera_width" value="0.045"/>
+  <xacro:property name="camera_height" value="0.03"/>
+
+  <!-- COLORS -->
+  <!-- links color -->
+  <material name="${prefix}links_color">
+    <color rgba="0.9 0.9 0.9 1.0"/>
+  </material>
+
+
+
+
+  <!-- 
+   _      _____ _   _ _  __ _____ 
+  | |    |_   _| \ | | |/ // ____|
+  | |      | | |  \| | ' /| (___  
+  | |      | | | . ` |  <  \___ \ 
+  | |____ _| |_| |\  | . \ ____) |
+  |______|_____|_| \_|_|\_\_____/                                   
+  -->
+
+  <link name="${prefix}frame">
+    <visual>
+      <origin xyz="0 0 0" rpy="${frame_rotation_offset}"/>
+      <geometry>
+        <mesh filename="package://rover_body_description/meshes/visual/frame.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="${prefix}links_color"/>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.053959 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.64 0.84 0.24"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="${prefix}left_suspension">
+    <visual>
+      <origin xyz="0 0 0" rpy="${left_suspension_rotation_offset}"/>
+      <geometry>
+        <mesh filename="package://rover_body_description/meshes/visual/left_suspension.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="${prefix}links_color"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.024 -0.032 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.06 0.48 0.06"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.024 ${-0.032+0.38} -0.15" rpy="${- pi / 4} 0 0"/>
+      <geometry>
+        <box size="0.06 0.45 0.06"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.094 ${-0.032 + 0.38 + 0.12} ${-0.15-0.12}" rpy="${- pi / 4} 0 0"/>
+      <geometry>
+        <box size="0.14 0.11 0.11"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="${prefix}left_sub_suspension">
+    <visual>
+      <origin xyz="0 0 0" rpy="${left_sub_suspension_rotation_offset}"/>
+      <geometry>
+        <mesh filename="package://rover_body_description/meshes/visual/left_sub_suspension.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="${prefix}links_color"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.05 0.125 -0.125" rpy="${- pi / 4} 0 0"/>
+      <geometry>
+        <box size="0.06 0.4 0.06"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.05 -0.125 -0.125" rpy="${pi / 4} 0 0"/>
+      <geometry>
+        <box size="0.06 0.4 0.06"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.11 ${0.125 + 0.1} ${- 0.125 - 0.1}" rpy="${- pi / 4} 0 0"/>
+      <geometry>
+        <box size="0.14 0.11 0.11"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.11 ${- 0.125 - 0.1} ${- 0.125 - 0.1}" rpy="${- pi / 4} 0 0"/>
+      <geometry>
+        <box size="0.14 0.11 0.11"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="${prefix}right_suspension">
+    <visual>
+      <origin xyz="0 0 0" rpy="${right_suspension_rotation_offset}"/>
+      <geometry>
+        <mesh filename="package://rover_body_description/meshes/visual/right_suspension.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="${prefix}links_color"/>
+    </visual>
+    <collision>
+      <origin xyz="0.024 -0.032 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.06 0.48 0.06"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.024 ${-0.032+0.38} -0.15" rpy="${- pi / 4} 0 0"/>
+      <geometry>
+        <box size="0.06 0.45 0.06"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.094 ${-0.032 + 0.38 + 0.12} ${-0.15-0.12}" rpy="${- pi / 4} 0 0"/>
+      <geometry>
+        <box size="0.14 0.11 0.11"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="${prefix}right_sub_suspension">
+    <visual>
+      <origin xyz="0 0 0" rpy="${right_sub_suspension_rotation_offset}"/>
+      <geometry>
+        <mesh filename="package://rover_body_description/meshes/visual/right_sub_suspension.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="${prefix}links_color"/>
+    </visual>
+    <collision>
+      <origin xyz="0.05 0.125 -0.125" rpy="${- pi / 4} 0 0"/>
+      <geometry>
+        <box size="0.06 0.4 0.06"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.05 -0.125 -0.125" rpy="${pi / 4} 0 0"/>
+      <geometry>
+        <box size="0.06 0.4 0.06"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.11 ${0.125 + 0.1} ${- 0.125 - 0.1}" rpy="${- pi / 4} 0 0"/>
+      <geometry>
+        <box size="0.14 0.11 0.11"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.11 ${- 0.125 - 0.1} ${- 0.125 - 0.1}" rpy="${- pi / 4} 0 0"/>
+      <geometry>
+        <box size="0.14 0.11 0.11"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="camera_pole">
+      <visual>
+          <origin xyz="0 0 0" rpy="0 0 0"/>
+          <geometry>
+          <box size="${pole_width} ${pole_width} ${pole_height}"/> 
+          </geometry>
+          <material name="${prefix}links_color"/>
+      </visual>
+  </link>
+
+  <link name="camera">
+      <visual>
+          <origin xyz="0 0 0" rpy="0 0 0"/>
+          <geometry>
+          <box size="${camera_len} ${camera_width} ${camera_height}"/> 
+          </geometry>
+          <material name="${prefix}links_color"/>
+      </visual>
+  </link>
+
+
+
+  <!-- 
+       _  ____ _____ _   _ _______ _____ 
+      | |/ __ \_   _| \ | |__   __/ ____|
+      | | |  | || | |  \| |  | | | (___  
+  _   | | |  | || | | . ` |  | |  \___ \ 
+ | |__| | |__| || |_| |\  |  | |  ____) |
+  \____/ \____/_____|_| \_|  |_| |_____/                                      
+  -->
+
+  <joint name="${prefix}mount_joint" type="fixed">
+    <parent link="${parent}"/>
+    <child link="${prefix}frame"/>
+    <xacro:insert_block name="origin" />
+  </joint>
+
+  <joint name="${prefix}left_suspension_joint" type="revolute">
+    <parent link="${prefix}frame"/>
+    <child link="${prefix}left_suspension"/>
+    <origin xyz="${left_suspension_joint_pos}" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="${-pi / 2}" upper="${pi / 2}" effort="50.0" velocity="1.0"/>
+  </joint>
+
+  <joint name="${prefix}left_sub_suspension_joint" type="revolute">
+    <parent link="${prefix}left_suspension"/>
+    <child link="${prefix}left_sub_suspension"/>
+    <origin xyz="${left_sub_suspension_joint_pos}" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="${-pi / 2}" upper="${pi / 2}" effort="50.0" velocity="1.0"/>
+  </joint>
+
+  <joint name="${prefix}right_suspension_joint" type="revolute">
+    <parent link="${prefix}frame"/>
+    <child link="${prefix}right_suspension"/>
+    <origin xyz="${right_suspension_joint_pos}" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="${-pi / 2}" upper="${pi / 2}" effort="50.0" velocity="1.0"/>
+  </joint>
+
+  <joint name="${prefix}right_sub_suspension_joint" type="revolute">
+    <parent link="${prefix}right_suspension"/>
+    <child link="${prefix}right_sub_suspension"/>
+    <origin xyz="${right_sub_suspension_joint_pos}" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="${-pi / 2}" upper="${pi / 2}" effort="50.0" velocity="1.0"/>
+  </joint>
+
+  <joint name="frame2camera_pole" type="fixed">
+      <parent link="base_link"/>
+      <child link="camera_pole"/>
+      <origin xyz="0 0.36 0.28" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="camera_pole2camera" type="fixed">
+      <parent link="camera_pole"/>
+      <child link="camera"/>
+      <origin xyz="0 0 ${pole_height / 2}" rpy="0 0 0"/>
+  </joint>
+
+
+
+
+<!-- 
+ __          ___    _ ______ ______ _       _____ 
+ \ \        / / |  | |  ____|  ____| |     / ____|
+  \ \  /\  / /| |__| | |__  | |__  | |    | (___  
+   \ \/  \/ / |  __  |  __| |  __| | |     \___ \ 
+    \  /\  /  | |  | | |____| |____| |____ ____) |
+     \/  \/   |_|  |_|______|______|______|_____/ 
+-->
+
+  <!-- Left Wheels - mirror=0 -->
+  <xacro:wheel prefix="${prefix}front_left" parent="${prefix}left_suspension" x_pos="-0.137" y_pos="0.480039" z_pos="-0.276626" mirror="0" />
+  <xacro:wheel prefix="${prefix}mid_left"   parent="${prefix}left_sub_suspension" x_pos="-0.1645"  y_pos="0.211339" z_pos="-0.244995" mirror="0" />             
+  <xacro:wheel prefix="${prefix}rear_left"  parent="${prefix}left_sub_suspension" x_pos="-0.1645" y_pos="-0.244995" z_pos="-0.211339" mirror="0" />
+
+
+  <!-- Right Wheels - mirror=1 -->
+  <xacro:wheel prefix="${prefix}front_right" parent="${prefix}right_suspension" x_pos="0.137" y_pos="0.480039" z_pos="-0.276626" mirror="1" />
+  <xacro:wheel prefix="${prefix}mid_right"   parent="${prefix}right_sub_suspension" x_pos="0.1645"  y_pos="0.229" z_pos="-0.2285" mirror="1" />
+  <xacro:wheel prefix="${prefix}rear_right"  parent="${prefix}right_sub_suspension" x_pos="0.1645" y_pos="-0.229" z_pos="-0.225" mirror="1" />
+
+
+  </xacro:macro>
+</robot>
