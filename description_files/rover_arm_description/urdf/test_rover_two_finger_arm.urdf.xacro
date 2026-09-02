@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="test_rover_two_finger_arm">
+
+  <xacro:include filename="$(find rover_arm_description)/urdf/two_finger_arm.urdf.xacro" />
+
+  <link name="base_link"/>
+
+  <xacro:rover_two_finger_arm prefix="" parent="base_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:rover_two_finger_arm>
+
+</robot>
